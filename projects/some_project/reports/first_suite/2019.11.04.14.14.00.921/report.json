@@ -1,0 +1,42 @@
+{
+    "tests": [
+        {
+            "test_set": "set_896e80",
+            "module": "",
+            "sub_modules": [],
+            "name": "order_capturing",
+            "full_name": "order_capturing",
+            "result": "code error",
+            "test_elapsed_time": 47.43,
+            "start_date_time": "2019/11/04 14:14",
+            "browser": "chrome",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "code error": 1
+    },
+    "net_elapsed_time": 47.44,
+    "has_finished": false
+}

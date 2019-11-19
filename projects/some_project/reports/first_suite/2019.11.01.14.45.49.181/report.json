@@ -1,0 +1,49 @@
+{
+    "tests": [
+        {
+            "test_set": "set_e4002c",
+            "module": "",
+            "sub_modules": [],
+            "name": "order_creation",
+            "full_name": "order_creation",
+            "result": "code error",
+            "test_elapsed_time": 39.2,
+            "start_date_time": "2019/11/01 14:45",
+            "browser": "chrome",
+            "data": {
+                "order_type": "'Real Property Recordings'",
+                "document_type": "'ABANDONMENT'",
+                "num_of_pages": "'1'",
+                "section": "'GRANTEE'",
+                "first_name": "'fname'",
+                "section2": "'GRANTEE'",
+                "parceId": "'1'",
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": "Real Property Recordings"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "code error": 1
+    },
+    "net_elapsed_time": 39.21,
+    "has_finished": false
+}

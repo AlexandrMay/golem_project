@@ -1,0 +1,20 @@
+12:45:49.429 INFO Test execution started: capture
+12:45:49.430 INFO Browser: chrome-remote
+12:45:49.430 INFO Environment: test_env
+12:45:49.430 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:45:50.028 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:46:03.143 INFO Click captureTab
+12:46:07.533 INFO Waiting for 3 seconds
+12:46:12.496 ERROR TypeError: rawElements() missing 1 required positional argument: 'tableId'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.findElementByTitle('Customer', 3, 'OrderQueue')))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 46, in findElementByTitle
+    return rawElements(raw)[i]
+TypeError: rawElements() missing 1 required positional argument: 'tableId'
+
+12:46:12.648 INFO Close browser
+12:46:12.707 INFO Test Result: CODE ERROR

@@ -1,0 +1,10 @@
+2019-11-14 14:14:04,924 root INFO Test execution started: func
+2019-11-14 14:14:04,924 root INFO Browser: chrome-remote
+2019-11-14 14:14:04,925 root INFO Environment: test_env
+2019-11-14 14:14:04,925 root INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+2019-11-14 14:14:04,926 root ERROR NameError: name 'TableHelper' is not defined
+Traceback (most recent call last):
+NameError: name 'TableHelper' is not defined
+
+2019-11-14 14:14:04,926 root INFO Test Result: CODE ERROR

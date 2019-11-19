@@ -1,0 +1,30 @@
+13:31:45.434 INFO Test execution started: order_finalization
+13:31:45.436 INFO Browser: chrome
+13:31:45.437 INFO Environment: test_env
+13:31:45.439 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:31:48.683 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:31:57.639 INFO Click addNewOrderButton
+13:31:59.101 INFO Waiting for 3 seconds
+13:32:02.144 INFO Click orderTypeDropdown
+13:32:02.257 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+13:32:03.665 INFO Write 'test_name' in element nameInput
+13:32:03.844 INFO Waiting for 3 seconds
+13:32:06.844 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:32:06.897 INFO Click addToOrderButton
+13:32:11.411 INFO Click newOrderItemButton
+13:32:12.674 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+13:32:14.834 INFO Write '1' in element numberOfPages
+13:32:14.934 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:32:14.973 INFO Click addToOrderButton
+13:32:15.871 INFO Waiting for 3 seconds
+13:32:18.874 ERROR TypeError: findElementByTitle() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_finalization.py", line 33, in test
+    print(a.get_element_text(new_order_page_form.findElementByTitle('Price', 2, 'OrderQueue')))
+TypeError: findElementByTitle() takes 2 positional arguments but 3 were given
+
+13:32:21.272 INFO Close browser
+13:32:23.489 INFO Test Result: CODE ERROR

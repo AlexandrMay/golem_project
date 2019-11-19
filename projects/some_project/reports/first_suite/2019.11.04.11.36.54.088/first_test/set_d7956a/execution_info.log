@@ -1,0 +1,20 @@
+11:36:54.101 INFO Test execution started: first_test
+11:36:54.102 INFO Browser: chrome
+11:36:54.102 INFO Environment: test_env
+11:36:54.103 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:36:57.284 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:37:04.432 INFO Wait for element ('css', '#orders > a', 'ordersTab') to be displayed
+11:37:05.504 WARNING Action assert_equals is deprecated
+11:37:05.506 INFO Assert that  equals 930
+11:37:05.514 ERROR AssertionError: expected  to equal 930
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\first_test.py", line 31, in test
+    a.assert_equals(valuesFromUI[i], receivedValues[i])
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 667, in assert_equals
+    assert actual_value == expected_value, 'expected {} to equal {}'.format(actual_value, expected_value)
+AssertionError: expected  to equal 930
+
+11:37:08.043 INFO Test Result: FAILURE

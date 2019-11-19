@@ -1,0 +1,44 @@
+{
+    "test_case": "second_test",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_4415e.png",
+            "error": {
+                "message": "ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py\", line 19, in test\n    a.click(new_order_page_header.orderTypeDropdownElement(data.order_type))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_header.py\", line 18, in orderTypeDropdownElement\n    return golemDriver.find(xpath=\"//select[@id='orderTypeId']/option[text()='{}']\".format(text))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py\", line 19, in test\n    a.click(new_order_page_header.orderTypeDropdownElement(data.order_type))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_header.py\", line 18, in orderTypeDropdownElement\n    return golemDriver.find(xpath=\"//select[@id='orderTypeId']/option[text()='{}']\".format(text))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'\n"
+        }
+    ],
+    "description": "Testing of Account alert appearing when account field is empty",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 34.81,
+    "test_timestamp": "2019.11.08.11.35.35.420"
+}

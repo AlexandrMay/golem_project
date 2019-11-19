@@ -1,0 +1,44 @@
+{
+    "test_case": "order_indexing",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click indexingTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.lengt; i++) { rows[i].style.display=''})' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_55d4d.png",
+            "error": {
+                "message": "JavascriptException: Message: javascript error: Unexpected token ')'\n  (Session info: chrome=77.0.3865.120)\n",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_indexing.py\", line 17, in test\n    my_actions.expandAllTableElements()\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\actions_helper\\my_actions.py\", line 7, in expandAllTableElements\n    actions.execute_javascript(\"var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.lengt; i++) { rows[i].style.display=''})\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1157, in execute_javascript\n    return get_browser().execute_script(script, *args)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 635, in execute_script\n    'args': converted_args})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.JavascriptException: Message: javascript error: Unexpected token ')'\n  (Session info: chrome=77.0.3865.120)\n\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "JavascriptException: Message: javascript error: Unexpected token ')'\n  (Session info: chrome=77.0.3865.120)\n",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_indexing.py\", line 17, in test\n    my_actions.expandAllTableElements()\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\actions_helper\\my_actions.py\", line 7, in expandAllTableElements\n    actions.execute_javascript(\"var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.lengt; i++) { rows[i].style.display=''})\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1157, in execute_javascript\n    return get_browser().execute_script(script, *args)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 635, in execute_script\n    'args': converted_args})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.JavascriptException: Message: javascript error: Unexpected token ')'\n  (Session info: chrome=77.0.3865.120)\n\n"
+        }
+    ],
+    "description": "Order indexing flow",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 16.4,
+    "test_timestamp": "2019.11.05.12.56.58.243"
+}

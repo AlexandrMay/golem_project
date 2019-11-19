@@ -1,0 +1,9 @@
+2019-11-14 14:20:02,636 root INFO Test execution started: func
+2019-11-14 14:20:02,636 root INFO Browser: chrome-remote
+2019-11-14 14:20:02,637 root INFO Environment: test_env
+2019-11-14 14:20:02,637 root INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+2019-11-14 14:20:04,647 selenium.webdriver.remote.remote_connection INFO Could not connect to port 4446 on host localhost
+2019-11-14 14:20:04,649 selenium.webdriver.remote.remote_connection INFO Could not get IP address for host: localhost
+2019-11-14 14:20:04,653 selenium.webdriver.remote.remote_connection DEBUG POST http://localhost:4446/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY"}}
+2019-11-14 14:20:06,747 root INFO Test Result: CODE ERROR

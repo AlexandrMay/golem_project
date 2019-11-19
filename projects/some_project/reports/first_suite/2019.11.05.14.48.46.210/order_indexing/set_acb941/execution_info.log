@@ -1,0 +1,12 @@
+14:48:46.227 INFO Test execution started: order_indexing
+14:48:46.228 INFO Browser: chrome
+14:48:46.228 INFO Environment: test_env
+14:48:46.228 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:48:49.484 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:48:56.914 INFO Click indexingTab
+14:49:03.338 INFO Execute javascript code 'var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.length; i++) { rows[i].style.display=''}' with args '()'
+14:49:03.421 INFO Execute javascript code 'var list = document.querySelectorAll(`td > span`); const el = Array.prototype.find.call(list, (item)=>item.innerText === '20191101000013'); el.getBoundingClientRect()' with args '()'
+14:49:03.431 INFO Waiting for 20 seconds
+14:49:23.434 INFO Test end
+14:49:25.948 INFO Test Result: SUCCESS

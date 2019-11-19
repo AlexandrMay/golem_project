@@ -1,0 +1,39 @@
+{
+    "test_case": "capture",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click captureTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_5678a.png",
+            "error": {
+                "message": "StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=78.0.3904.97)\n",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\capture.py\", line 20, in test\n    new_order_page_form.printMatrix()\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 45, in printMatrix\n    for row in rowsWithColumns():\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 40, in rowsWithColumns\n    b = rows()[i].find_all(xpath=\"/td\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_webelement.py\", line 91, in find_all\n    return _find_all(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 194, in _find_all\n    webelements = self.find_elements_by_xpath(xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 381, in find_elements_by_xpath\n    return self.find_elements(by=By.XPATH, value=xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 680, in find_elements\n    {\"using\": by, \"value\": value})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 628, in _execute\n    return self._parent.execute(command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=78.0.3904.97)\n\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=78.0.3904.97)\n",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\capture.py\", line 20, in test\n    new_order_page_form.printMatrix()\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 45, in printMatrix\n    for row in rowsWithColumns():\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 40, in rowsWithColumns\n    b = rows()[i].find_all(xpath=\"/td\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_webelement.py\", line 91, in find_all\n    return _find_all(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 194, in _find_all\n    webelements = self.find_elements_by_xpath(xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 381, in find_elements_by_xpath\n    return self.find_elements(by=By.XPATH, value=xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 680, in find_elements\n    {\"using\": by, \"value\": value})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 628, in _execute\n    return self._parent.execute(command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=78.0.3904.97)\n\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 35.8,
+    "test_timestamp": "2019.11.15.16.23.23.445"
+}

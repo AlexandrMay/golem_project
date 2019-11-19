@@ -1,0 +1,18 @@
+11:40:08.183 INFO Test execution started: capture
+11:40:08.184 INFO Browser: chrome
+11:40:08.184 INFO Environment: test_env
+11:40:08.185 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:40:11.488 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:40:19.886 INFO Click captureTab
+11:40:23.910 INFO Waiting for 3 seconds
+11:40:26.911 ERROR AttributeError: module 'new_order_page_form' has no attribute 'findElementByString'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.findElementByString('Recorded Date', '8561')))
+AttributeError: module 'new_order_page_form' has no attribute 'findElementByString'
+
+11:40:27.246 INFO Close browser
+11:40:29.432 INFO Test Result: CODE ERROR

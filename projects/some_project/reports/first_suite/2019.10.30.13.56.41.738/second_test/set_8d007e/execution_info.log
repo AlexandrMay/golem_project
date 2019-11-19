@@ -1,0 +1,26 @@
+13:56:41.742 INFO Test execution started: second_test
+13:56:41.742 INFO Browser: chrome
+13:56:41.743 INFO Environment: test_env
+13:56:41.743 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:56:44.926 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:56:52.110 INFO Click addNewOrderButton
+13:56:53.543 INFO Waiting for 3 seconds
+13:56:56.577 INFO Click orderTypeDropdown
+13:56:56.675 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+13:56:58.472 INFO Click documentTypeDropdown
+13:56:58.562 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+13:56:58.630 INFO Write '1' in element numberOfPages
+13:56:58.735 INFO Write '1' in element numberOfLots
+13:56:58.849 INFO Click partiesTab
+13:56:59.002 INFO Write 'asd' in element //input[@placeholder='First Name']
+13:56:59.120 INFO Execute javascript code 'window.moveTo(0, 500)' with args '()'
+13:56:59.127 INFO Waiting for 10 seconds
+13:57:09.128 INFO Test end
+13:57:11.649 INFO Test Result: SUCCESS

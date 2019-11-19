@@ -1,0 +1,40 @@
+14:37:57.641 INFO Test execution started: order_creation
+14:37:57.641 INFO Browser: chrome
+14:37:57.642 INFO Environment: test_env
+14:37:57.642 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTEE
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:38:00.911 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:38:09.871 INFO Click addNewOrderButton
+14:38:11.289 INFO Waiting for 3 seconds
+14:38:14.321 INFO Click orderTypeDropdown
+14:38:14.419 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+14:38:18.146 INFO Click documentTypeDropdown
+14:38:18.258 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+14:38:18.368 INFO Write '1' in element numberOfPages
+14:38:18.467 INFO Click partiesTab
+14:38:33.979 ERROR ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_creation.py", line 22, in test
+    a.send_keys(new_order_page_form.firstNameInput(data.section), data.first_name)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 9, in firstNameInput
+    return partiesSection(text).find(xpath="//input[@placeholder='First Name']")
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 6, in partiesSection
+    return golemDriver.find(xpath="//div[@class='block-header-with-bg']/label[text()='{}']/div".format(text))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'
+
+14:38:36.528 INFO Test Result: CODE ERROR

@@ -1,0 +1,10 @@
+14:26:06.296 INFO Test execution started: func
+14:26:06.297 INFO Browser: chrome-remote
+14:26:06.297 INFO Environment: test_env
+14:26:06.297 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:28:43.592 ERROR KeyboardInterrupt
+Traceback (most recent call last):
+KeyboardInterrupt
+
+14:28:43.595 INFO Test Result: CODE ERROR

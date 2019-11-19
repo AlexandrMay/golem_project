@@ -1,0 +1,20 @@
+17:11:47.237 INFO Test execution started: capture
+17:11:47.238 INFO Browser: chrome
+17:11:47.238 INFO Environment: test_env
+17:11:47.239 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+17:11:50.474 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+17:12:05.199 INFO Click captureTab
+17:12:11.319 INFO Waiting for 3 seconds
+17:12:14.602 ERROR TypeError: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.some('20191002000145')))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 53, in some
+    for j in range(len(raws())[i]):
+TypeError: 'int' object is not subscriptable
+
+17:12:15.015 INFO Close browser
+17:12:17.274 INFO Test Result: CODE ERROR

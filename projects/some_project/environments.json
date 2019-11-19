@@ -1,0 +1,9 @@
+{
+    "test_env": {
+        "url": "http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=",
+        "login": "User1",
+        "password": "Automation_1_3",
+        "getItemsLink": "https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts",
+        "cookieName": "ASP.NET_SessionId"
+    }
+}

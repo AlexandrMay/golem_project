@@ -1,0 +1,28 @@
+14:15:17.354 INFO Test execution started: plats
+14:15:17.354 INFO Browser: chrome
+14:15:17.355 INFO Environment: test_env
+14:15:17.356 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:15:20.609 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:15:30.985 INFO Waiting for 3 seconds
+14:15:35.015 INFO Click //td/a[@class='iconredirectorder ']
+14:15:41.475 INFO Click editOrderSummaryButton
+14:15:44.706 INFO Waiting for 3 seconds
+14:15:47.708 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+14:16:02.972 ERROR ElementNotFound: Element editOITFundsButton not found using selector css:'.orderSummaryBottomLinks > a'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\plats.py", line 21, in test
+    a.click(new_order_page_form.editOITFundsButton)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 983, in click
+    element = browser.get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element editOITFundsButton not found using selector css:'.orderSummaryBottomLinks > a'
+
+14:16:05.724 INFO Test Result: CODE ERROR

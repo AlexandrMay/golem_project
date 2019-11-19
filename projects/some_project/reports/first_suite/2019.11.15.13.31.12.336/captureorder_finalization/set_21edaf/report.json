@@ -1,0 +1,20 @@
+{
+    "test_case": "captureorder_finalization",
+    "result": "code error",
+    "steps": [],
+    "errors": [
+        {
+            "message": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\alexandr.may\\\\testdir\\\\projects\\\\some_project\\\\tests\\\\captureorder_finalization.py'",
+            "description": "Traceback (most recent call last):\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\alexandr.may\\\\testdir\\\\projects\\\\some_project\\\\tests\\\\captureorder_finalization.py'\n"
+        }
+    ],
+    "description": null,
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 0.0,
+    "test_timestamp": "2019.11.15.13.31.12.338"
+}

@@ -1,0 +1,14 @@
+13:41:26.632 INFO Test execution started: fee_distribution
+13:41:26.633 INFO Browser: chrome-remote
+13:41:26.634 INFO Environment: test_env
+13:41:26.635 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:41:27.728 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:41:41.157 INFO Waiting for 3 seconds
+13:41:44.257 INFO Click //table//td/span[contains(text(),'20191001000218')]/parent::td/following-sibling::td/a[@class='iconredirectorder ']
+13:41:50.454 INFO Click editOrderSummaryButton
+13:41:52.815 INFO Waiting for 3 seconds
+13:41:55.817 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:41:55.887 INFO Click editOITFundsButton
+13:41:56.935 INFO Test end
+13:41:57.133 INFO Test Result: SUCCESS

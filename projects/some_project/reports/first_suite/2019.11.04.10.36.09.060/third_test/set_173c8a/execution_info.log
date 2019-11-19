@@ -1,0 +1,28 @@
+10:37:19.260 INFO Test execution started: third_test
+10:37:19.261 INFO Browser: chrome
+10:37:19.262 INFO Environment: test_env
+10:37:19.263 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+10:37:22.428 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+10:37:29.451 INFO Waiting for 10 seconds
+10:37:39.535 INFO Click ordersTab
+10:37:43.221 INFO Waiting for 2 seconds
+10:37:45.267 INFO Click captureTab
+10:38:17.109 INFO Waiting for 2 seconds
+10:38:34.290 ERROR ElementNotFound: Element headersCounter not found using selector css:'.fleft > h3 > span'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\third_test.py", line 24, in test
+    valuesFromHeaders.append(a.get_element_text(home_page.headersCounter))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1259, in get_element_text
+    element = get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element headersCounter not found using selector css:'.fleft > h3 > span'
+
+10:38:36.806 INFO Test Result: CODE ERROR

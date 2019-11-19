@@ -1,0 +1,14 @@
+13:33:33.673 INFO Test execution started: capture
+13:33:33.673 INFO Browser: chrome
+13:33:33.673 INFO Environment: test_env
+13:33:33.674 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:33:36.947 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:33:48.270 INFO Click captureTab
+13:33:56.246 INFO Waiting for 3 seconds
+13:33:59.356 INFO Focus element //table//td[contains(text(),'AA0012919')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode']
+13:33:59.419 INFO Click //table//td[contains(text(),'AA0012919')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode']
+13:34:08.157 INFO Waiting for 5 seconds
+13:34:13.158 INFO Test end
+13:34:13.532 INFO Close browser
+13:34:15.705 INFO Test Result: SUCCESS

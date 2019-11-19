@@ -1,0 +1,29 @@
+13:31:53.040 INFO Test execution started: second_test
+13:31:53.040 INFO Browser: chrome-remote
+13:31:53.041 INFO Environment: test_env
+13:31:53.041 INFO Using data:
+    order_type: Plats
+    document_type: LETTER (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    alert_text: Please Enter Account OR Email OR Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:31:54.272 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:32:07.110 INFO Click addNewOrderButton
+13:32:09.958 INFO Waiting for 3 seconds
+13:32:12.997 INFO Click orderTypeDropdown
+13:32:13.155 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+13:32:15.708 INFO Click documentTypeDropdown
+13:32:15.876 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='LETTER (PL)']
+13:32:16.058 INFO Write '1' in element numberOfPages
+13:32:16.296 INFO Write '1' in element numberOfLots
+13:32:16.466 INFO Click partiesTab
+13:32:16.600 INFO Write 'First Name' in element //input[@placeholder='First Name']
+13:32:16.908 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:32:16.957 INFO Click addToOrderButton
+13:32:17.369 WARNING Action assert_equals is deprecated
+13:32:17.369 INFO Assert that Please Enter Account OR Email OR Name equals Please Enter Account OR Email OR Name
+13:32:17.369 INFO Test end
+13:32:17.614 INFO Test Result: SUCCESS

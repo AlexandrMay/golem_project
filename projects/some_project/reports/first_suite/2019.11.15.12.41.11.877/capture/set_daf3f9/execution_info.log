@@ -1,0 +1,18 @@
+12:41:11.895 INFO Test execution started: capture
+12:41:11.895 INFO Browser: chrome-remote
+12:41:11.896 INFO Environment: test_env
+12:41:11.896 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:41:12.527 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:41:23.767 INFO Click captureTab
+12:41:30.524 INFO Waiting for 3 seconds
+12:41:33.527 ERROR TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.findElementByTitle('Customer', 3)))
+TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'
+
+12:41:33.702 INFO Close browser
+12:41:33.772 INFO Test Result: CODE ERROR

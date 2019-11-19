@@ -1,0 +1,25 @@
+17:09:09.896 INFO Test execution started: capture
+17:09:09.897 INFO Browser: chrome
+17:09:09.897 INFO Environment: test_env
+17:09:09.897 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+17:09:13.246 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+17:09:23.207 INFO Waiting for 3 seconds
+17:09:41.669 ERROR ElementNotFound: Element //td[text()='20191029000021']::following-sibling/td/a[@class='iconredirectorder '] not found using selector xpath:'//td[text()='20191029000021']::following-sibling/td/a[@class='iconredirectorder ']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.click(new_order_page_form.runningMan('20191029000021')))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 43, in runningMan
+    return golemDriver.find(xpath="//td[text()='{}']::following-sibling/td/a[@class='iconredirectorder ']".format(key))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element //td[text()='20191029000021']::following-sibling/td/a[@class='iconredirectorder '] not found using selector xpath:'//td[text()='20191029000021']::following-sibling/td/a[@class='iconredirectorder ']'
+
+17:09:42.031 INFO Close browser
+17:09:44.153 INFO Test Result: CODE ERROR

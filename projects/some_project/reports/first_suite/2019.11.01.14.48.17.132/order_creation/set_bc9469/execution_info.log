@@ -1,0 +1,38 @@
+14:48:17.136 INFO Test execution started: order_creation
+14:48:17.136 INFO Browser: chrome
+14:48:17.137 INFO Environment: test_env
+14:48:17.137 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTEE
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:48:20.399 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:48:27.349 INFO Click addNewOrderButton
+14:48:28.877 INFO Waiting for 3 seconds
+14:48:31.905 INFO Click orderTypeDropdown
+14:48:32.020 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+14:48:34.209 INFO Click documentTypeDropdown
+14:48:34.345 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+14:48:34.443 INFO Write '1' in element numberOfPages
+14:48:34.566 INFO Click partiesTab
+14:48:50.099 ERROR ElementNotFound: Element following-sibling::div/input[@placeholder='First Name'] not found using selector xpath:'following-sibling::div/input[@placeholder='First Name']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_creation.py", line 22, in test
+    a.send_keys(new_order_page_form.firstNameInput(data.section), data.first_name)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 9, in firstNameInput
+    return partiesSection(text).find(xpath="following-sibling::div/input[@placeholder='First Name']")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_webelement.py", line 68, in find
+    return _find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element following-sibling::div/input[@placeholder='First Name'] not found using selector xpath:'following-sibling::div/input[@placeholder='First Name']'
+
+14:48:52.621 INFO Test Result: CODE ERROR

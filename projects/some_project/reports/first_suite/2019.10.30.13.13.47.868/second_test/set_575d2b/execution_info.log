@@ -1,0 +1,31 @@
+13:13:47.872 INFO Test execution started: second_test
+13:13:47.872 INFO Browser: chrome
+13:13:47.873 INFO Environment: test_env
+13:13:47.873 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:13:51.061 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:13:59.907 INFO Click addNewOrderButton
+13:14:01.348 INFO Waiting for 3 seconds
+13:14:04.389 INFO Click orderTypeDropdown
+13:14:04.493 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+13:14:06.801 INFO Click documentTypeDropdown
+13:14:06.894 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+13:14:06.972 INFO Write '1' in element numberOfPages
+13:14:07.071 INFO Write '1' in element numberOfLots
+13:14:07.180 INFO Click partiesTab
+13:14:07.316 INFO Write 'asd' in element //input[@placeholder='First Name']
+13:14:07.450 ERROR TypeError: press_key() missing 1 required positional argument: 'key'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 24, in test
+    a.press_key('ENTER')
+TypeError: press_key() missing 1 required positional argument: 'key'
+
+13:14:10.069 INFO Test Result: CODE ERROR

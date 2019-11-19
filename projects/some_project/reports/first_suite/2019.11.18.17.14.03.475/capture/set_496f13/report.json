@@ -1,0 +1,34 @@
+{
+    "test_case": "capture",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_1f488.png",
+            "error": {
+                "message": "ElementNotFound: Element .//td[text()='20191029000021']/child::a[@class='iconredirectorder '] not found using selector xpath:'.//td[text()='20191029000021']/child::a[@class='iconredirectorder ']'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\capture.py\", line 20, in test\n    print(a.click(new_order_page_form.runningMan('20191029000021')))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 43, in runningMan\n    return golemDriver.find(xpath=\".//td[text()='{}']/child::a[@class='iconredirectorder ']\".format(key))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element .//td[text()='20191029000021']/child::a[@class='iconredirectorder '] not found using selector xpath:'.//td[text()='20191029000021']/child::a[@class='iconredirectorder ']'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element .//td[text()='20191029000021']/child::a[@class='iconredirectorder '] not found using selector xpath:'.//td[text()='20191029000021']/child::a[@class='iconredirectorder ']'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\capture.py\", line 20, in test\n    print(a.click(new_order_page_form.runningMan('20191029000021')))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 43, in runningMan\n    return golemDriver.find(xpath=\".//td[text()='{}']/child::a[@class='iconredirectorder ']\".format(key))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element .//td[text()='20191029000021']/child::a[@class='iconredirectorder '] not found using selector xpath:'.//td[text()='20191029000021']/child::a[@class='iconredirectorder ']'\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 32.86,
+    "test_timestamp": "2019.11.18.17.14.03.482"
+}

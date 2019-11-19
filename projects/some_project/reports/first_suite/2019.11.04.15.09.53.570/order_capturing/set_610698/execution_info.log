@@ -1,0 +1,29 @@
+15:09:53.573 INFO Test execution started: order_capturing
+15:09:53.574 INFO Browser: chrome
+15:09:53.574 INFO Environment: test_env
+15:09:53.575 INFO Using data:
+    doc_group: REAL PROPERTY
+    doc_type: ABANDONMENT
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+15:09:56.753 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+15:10:06.284 INFO Click captureTab
+15:10:09.636 INFO Waiting for 3 seconds
+15:10:12.673 INFO Click startScanButton
+15:10:12.996 INFO Waiting for 3 seconds
+15:10:31.340 ERROR ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_capturing.py", line 20, in test
+    a.click(capture_tab_page.startScanButton)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 983, in click
+    element = browser.get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'
+
+15:10:33.855 INFO Test Result: CODE ERROR

@@ -1,0 +1,20 @@
+15:43:57.696 INFO Test execution started: capture
+15:43:57.696 INFO Browser: chrome
+15:43:57.697 INFO Environment: test_env
+15:43:57.697 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+15:44:00.928 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+15:44:10.759 INFO Click captureTab
+15:44:15.143 INFO Waiting for 3 seconds
+15:47:00.734 ERROR IndexError: list index out of range
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.findElementByHeaderTitle('Customer', 3)))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 60, in findElementByHeaderTitle
+    return rowsWithColumns()[raw][i]
+IndexError: list index out of range
+
+15:47:01.143 INFO Close browser
+15:47:03.278 INFO Test Result: CODE ERROR

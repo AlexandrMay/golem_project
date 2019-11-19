@@ -1,0 +1,10 @@
+11:39:09.592 INFO Test execution started: capture
+11:39:09.593 INFO Browser: chrome
+11:39:09.593 INFO Environment: test_env
+11:39:09.593 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:39:12.858 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:39:21.907 INFO Click captureTab
+11:39:26.362 INFO Waiting for 3 seconds
+11:39:30.181 INFO Test end
+11:39:32.956 INFO Test Result: SUCCESS

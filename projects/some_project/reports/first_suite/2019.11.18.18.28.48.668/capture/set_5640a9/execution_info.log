@@ -1,0 +1,26 @@
+18:28:48.680 INFO Test execution started: capture
+18:28:48.681 INFO Browser: chrome
+18:28:48.681 INFO Environment: test_env
+18:28:48.682 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+18:28:51.897 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+18:29:00.455 INFO Click captureTab
+18:29:05.522 INFO Waiting for 3 seconds
+18:29:23.925 ERROR ElementNotFound: Element //table//td[contains(text(),'20191007000009')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode '] not found using selector xpath:'//table//td[contains(text(),'20191007000009')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode ']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    a.focus_element(new_order_page_form.runningManByOrderNumber('20191007000009'))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 47, in runningManByOrderNumber
+    return golemDriver.find(xpath="//table//td[contains(text(),'{}')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode ']".format(orderNumber))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element //table//td[contains(text(),'20191007000009')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode '] not found using selector xpath:'//table//td[contains(text(),'20191007000009')]/following-sibling::td/a[@class='iconbatchscan reprocess adminmode ']'
+
+18:29:24.302 INFO Close browser
+18:29:26.473 INFO Test Result: CODE ERROR

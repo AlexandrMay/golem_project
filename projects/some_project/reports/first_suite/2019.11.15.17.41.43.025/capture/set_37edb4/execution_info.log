@@ -1,0 +1,26 @@
+17:41:43.033 INFO Test execution started: capture
+17:41:43.033 INFO Browser: chrome
+17:41:43.034 INFO Environment: test_env
+17:41:43.034 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+17:41:46.233 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+17:41:55.785 INFO Click captureTab
+17:42:02.662 INFO Waiting for 3 seconds
+17:42:05.909 ERROR IncorrectSelectorType: Selector is not a valid option
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.find('20191002000145')))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 47, in find
+    if(a.get_element_text(rawElements(i)[j] == text)):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1259, in get_element_text
+    element = get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 118, in _find
+    raise IncorrectSelectorType('Selector is not a valid option')
+golem.core.exceptions.IncorrectSelectorType: Selector is not a valid option
+
+17:42:06.266 INFO Close browser
+17:42:08.528 INFO Test Result: CODE ERROR

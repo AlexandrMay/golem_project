@@ -1,0 +1,26 @@
+11:35:35.421 INFO Test execution started: second_test
+11:35:35.422 INFO Browser: chrome
+11:35:35.423 INFO Environment: test_env
+11:35:35.424 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:35:38.589 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:35:47.855 INFO Click addNewOrderButton
+11:35:49.277 INFO Waiting for 3 seconds
+11:35:52.313 INFO Click orderTypeDropdown
+11:36:07.717 ERROR ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 19, in test
+    a.click(new_order_page_header.orderTypeDropdownElement(data.order_type))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_header.py", line 18, in orderTypeDropdownElement
+    return golemDriver.find(xpath="//select[@id='orderTypeId']/option[text()='{}']".format(text))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element //select[@id='orderTypeId']/option[text()='None'] not found using selector xpath:'//select[@id='orderTypeId']/option[text()='None']'
+
+11:36:10.232 INFO Test Result: CODE ERROR

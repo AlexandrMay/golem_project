@@ -1,0 +1,40 @@
+{
+    "tests": [
+        {
+            "test_set": "set_6236ca",
+            "module": "",
+            "sub_modules": [],
+            "name": "capture",
+            "full_name": "capture",
+            "result": "stopped",
+            "test_elapsed_time": "",
+            "start_date_time": "",
+            "browser": "",
+            "data": "",
+            "environment": "",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "stopped": 1
+    },
+    "net_elapsed_time": 674.52,
+    "has_finished": false
+}

@@ -1,0 +1,59 @@
+{
+    "tests": [
+        {
+            "test_set": "set_eda4ca",
+            "module": "",
+            "sub_modules": [],
+            "name": "capture",
+            "full_name": "capture",
+            "result": "success",
+            "test_elapsed_time": 21.24,
+            "start_date_time": "2019/11/15 12:59",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_a41f25",
+            "module": "",
+            "sub_modules": [],
+            "name": "order_finalization",
+            "full_name": "order_finalization",
+            "result": "code error",
+            "test_elapsed_time": 34.32,
+            "start_date_time": "2019/11/15 12:59",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome-remote",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": "http://localhost:4446/wd/hub"
+    },
+    "total_tests": 2,
+    "totals_by_result": {
+        "success": 1,
+        "code error": 1
+    },
+    "net_elapsed_time": 55.57,
+    "has_finished": false
+}

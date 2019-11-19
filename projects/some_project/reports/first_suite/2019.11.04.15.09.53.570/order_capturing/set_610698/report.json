@@ -1,0 +1,46 @@
+{
+    "test_case": "order_capturing",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click captureTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click startScanButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_fe094.png",
+            "error": {
+                "message": "ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 20, in test\n    a.click(capture_tab_page.startScanButton)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 983, in click\n    element = browser.get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 20, in test\n    a.click(capture_tab_page.startScanButton)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 983, in click\n    element = browser.get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //a[@class='startBatchScanBtn clickable'] not found using selector xpath:'//a[@class='startBatchScanBtn clickable']'\n"
+        }
+    ],
+    "description": "Order capturing flow",
+    "browser": "chrome",
+    "test_data": {
+        "doc_group": "'REAL PROPERTY'",
+        "doc_type": "'ABANDONMENT'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "REAL PROPERTY",
+    "test_elapsed_time": 40.28,
+    "test_timestamp": "2019.11.04.15.09.53.572"
+}

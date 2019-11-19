@@ -1,0 +1,52 @@
+15:49:59.195 INFO Test execution started: order_creation
+15:49:59.195 INFO Browser: chrome
+15:49:59.195 INFO Environment: test_env
+15:49:59.196 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTOR
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    name: auto test
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+15:50:02.472 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+15:50:10.687 INFO Click addNewOrderButton
+15:50:12.076 INFO Waiting for 3 seconds
+15:50:15.091 INFO Click orderTypeDropdown
+15:50:15.179 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+15:50:17.342 INFO Click documentTypeDropdown
+15:50:17.463 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+15:50:17.559 INFO Write '1' in element numberOfPages
+15:50:17.677 INFO Click partiesTab
+15:50:17.805 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTOR']/parent::div/following-sibling::div//input[@placeholder='First Name']
+15:50:17.976 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/parent::div/following-sibling::div//input[@placeholder='First Name']
+15:50:18.218 INFO Click propertiesTab
+15:50:18.296 INFO Write '1' in element partiesTab
+15:50:18.375 INFO Write 'auto test' in element nameInput
+15:50:18.638 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+15:50:18.659 INFO Click addToOrderButton
+15:50:18.801 ERROR ElementClickInterceptedException: Message: element click intercepted: Element <input isagevalid="False" isbirthcertificate="False" isdeathcertificate="False" ismanualfeedistributionenabled="False" ismanualfeedistributionenabledoit="False" ispaymentavailable="False" mlvalidationwarningvisible="False" class="btn-orange" data-bind="enable: isValid() &amp;&amp; !Disabled()" data-submit-url="https://crs.qa.kofile.com/69999/Order" data-url="https://crs.qa.kofile.com/69999/Order" id="addToOrder" name="action:CreateNewOrder" title="Add To Order" type="submit" value="Add To Order" disabled=""> is not clickable at point (856, 638). Other element would receive the click: <div class="properties-tools display-inline-block hideLinkOnCopy" style="width: 60px;">...</div>
+  (Session info: chrome=77.0.3865.120)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_creation.py", line 29, in test
+    a.click(new_order_page_form.addToOrderButton)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 985, in click
+    element.click()
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input isagevalid="False" isbirthcertificate="False" isdeathcertificate="False" ismanualfeedistributionenabled="False" ismanualfeedistributionenabledoit="False" ispaymentavailable="False" mlvalidationwarningvisible="False" class="btn-orange" data-bind="enable: isValid() &amp;&amp; !Disabled()" data-submit-url="https://crs.qa.kofile.com/69999/Order" data-url="https://crs.qa.kofile.com/69999/Order" id="addToOrder" name="action:CreateNewOrder" title="Add To Order" type="submit" value="Add To Order" disabled=""> is not clickable at point (856, 638). Other element would receive the click: <div class="properties-tools display-inline-block hideLinkOnCopy" style="width: 60px;">...</div>
+  (Session info: chrome=77.0.3865.120)
+
+
+15:50:21.387 INFO Test Result: CODE ERROR

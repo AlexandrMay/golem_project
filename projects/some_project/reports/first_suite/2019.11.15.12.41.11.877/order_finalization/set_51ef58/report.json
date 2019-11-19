@@ -1,0 +1,89 @@
+{
+    "test_case": "order_finalization",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'test_name' in element nameInput",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.scrollTo(0, 1000)' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addToOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click newOrderItemButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.scrollTo(0, 1000)' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addToOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_dec03.png",
+            "error": {
+                "message": "TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_finalization.py\", line 33, in test\n    print(a.get_element_text(new_order_page_form.findElementByTitle('Price', 2)))\nTypeError: findElementByTitle() missing 1 required positional argument: 'tableId'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_finalization.py\", line 33, in test\n    print(a.get_element_text(new_order_page_form.findElementByTitle('Price', 2)))\nTypeError: findElementByTitle() missing 1 required positional argument: 'tableId'\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome (remote)",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 39.74,
+    "test_timestamp": "2019.11.15.12.41.33.775"
+}

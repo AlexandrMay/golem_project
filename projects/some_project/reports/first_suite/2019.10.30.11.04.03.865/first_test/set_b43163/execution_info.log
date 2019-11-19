@@ -1,0 +1,18 @@
+11:04:04.323 INFO Test execution started: first_test
+11:04:04.323 INFO Browser: chrome-remote
+11:04:04.324 INFO Environment: test_env
+11:04:04.324 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:04:05.103 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:04:18.491 INFO Click ordersTab
+11:04:21.778 INFO Waiting for 3 seconds
+11:04:25.984 WARNING Action assert_equals is deprecated
+11:04:25.985 INFO Assert that 856 equals 856
+11:04:25.987 WARNING Action assert_equals is deprecated
+11:04:25.988 INFO Assert that 729 equals 729
+11:04:25.990 WARNING Action assert_equals is deprecated
+11:04:25.991 INFO Assert that 99/120 equals 99/120
+11:04:25.992 WARNING Action assert_equals is deprecated
+11:04:25.993 INFO Assert that 15/15 equals 15/15
+11:04:25.996 INFO Test end
+11:04:26.233 INFO Test Result: SUCCESS

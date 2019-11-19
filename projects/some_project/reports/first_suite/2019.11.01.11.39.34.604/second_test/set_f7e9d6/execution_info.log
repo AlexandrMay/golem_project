@@ -1,0 +1,38 @@
+11:39:34.608 INFO Test execution started: second_test
+11:39:34.608 INFO Browser: chrome-remote
+11:39:34.609 INFO Environment: test_env
+11:39:34.609 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    alert_text: Please Enter Account OR Email OR Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:39:35.973 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:39:52.082 INFO Click addNewOrderButton
+11:39:54.449 INFO Waiting for 3 seconds
+11:39:57.515 INFO Click orderTypeDropdown
+11:39:57.621 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+11:40:00.300 INFO Click documentTypeDropdown
+11:40:00.408 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+11:40:00.499 INFO Write '1' in element numberOfPages
+11:40:00.634 INFO Write '1' in element numberOfLots
+11:40:00.793 INFO Click partiesTab
+11:40:00.942 INFO Write 'First Name' in element //input[@placeholder='First Name']
+11:40:01.206 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+11:40:01.270 INFO Click addToOrderButton
+11:40:01.798 WARNING Action assert_equals is deprecated
+11:40:01.799 INFO Assert that Please Enter Account OR Email OR Name equals Please Enter Account OR Email OR Name
+11:40:01.813 ERROR TypeError: the JSON object must be str, bytes or bytearray, not TextIOWrapper
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 31, in test
+    json.loads(file)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not TextIOWrapper
+
+11:40:02.009 INFO Test Result: CODE ERROR

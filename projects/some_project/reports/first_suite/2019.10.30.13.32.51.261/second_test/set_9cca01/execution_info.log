@@ -1,0 +1,31 @@
+13:32:51.264 INFO Test execution started: second_test
+13:32:51.265 INFO Browser: chrome
+13:32:51.265 INFO Environment: test_env
+13:32:51.266 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:32:54.553 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:33:09.330 INFO Click addNewOrderButton
+13:33:13.036 INFO Waiting for 3 seconds
+13:33:16.059 INFO Click orderTypeDropdown
+13:33:16.152 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+13:33:20.812 INFO Click documentTypeDropdown
+13:33:20.901 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+13:33:20.968 INFO Write '1' in element numberOfPages
+13:33:21.071 INFO Write '1' in element numberOfLots
+13:33:21.177 INFO Click partiesTab
+13:33:21.319 INFO Write 'asd' in element //input[@placeholder='First Name']
+13:33:21.443 ERROR TypeError: 'tuple' object is not callable
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 24, in test
+    a.click(new_order_page_form.addToOrderButton())
+TypeError: 'tuple' object is not callable
+
+13:33:23.999 INFO Test Result: CODE ERROR

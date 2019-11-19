@@ -1,0 +1,32 @@
+14:35:12.440 INFO Test execution started: order_indexing
+14:35:12.440 INFO Browser: chrome
+14:35:12.441 INFO Environment: test_env
+14:35:12.441 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:35:15.678 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:35:24.088 INFO Click indexingTab
+14:35:28.079 INFO Execute javascript code 'var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.length; i++) { rows[i].style.display=''}' with args '()'
+14:35:28.110 INFO Execute javascript code 'var el = document.querySelector(`td > span:contains('20191101000013')`); el.getBoundingClientRect()' with args '()'
+14:35:28.182 ERROR InvalidElementStateException: Message: invalid element state: Failed to execute 'querySelector' on 'Document': 'td > span:contains('20191101000013')' is not a valid selector.
+  (Session info: chrome=77.0.3865.120)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_indexing.py", line 18, in test
+    print(my_actions.getCoordsOfElement())
+  File "C:\Users\alexandr.may\testdir\projects\some_project\actions_helper\my_actions.py", line 10, in getCoordsOfElement
+    actions.execute_javascript("var el = document.querySelector(`td > span:contains('20191101000013')`); el.getBoundingClientRect()")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1157, in execute_javascript
+    return get_browser().execute_script(script, *args)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 635, in execute_script
+    'args': converted_args})['value']
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Failed to execute 'querySelector' on 'Document': 'td > span:contains('20191101000013')' is not a valid selector.
+  (Session info: chrome=77.0.3865.120)
+
+
+14:35:30.756 INFO Test Result: CODE ERROR

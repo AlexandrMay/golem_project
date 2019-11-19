@@ -1,0 +1,31 @@
+12:56:58.244 INFO Test execution started: order_indexing
+12:56:58.245 INFO Browser: chrome
+12:56:58.245 INFO Environment: test_env
+12:56:58.245 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:57:01.492 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:57:08.610 INFO Click indexingTab
+12:57:12.110 INFO Execute javascript code 'var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.lengt; i++) { rows[i].style.display=''})' with args '()'
+12:57:12.172 ERROR JavascriptException: Message: javascript error: Unexpected token ')'
+  (Session info: chrome=77.0.3865.120)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_indexing.py", line 17, in test
+    my_actions.expandAllTableElements()
+  File "C:\Users\alexandr.may\testdir\projects\some_project\actions_helper\my_actions.py", line 7, in expandAllTableElements
+    actions.execute_javascript("var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.lengt; i++) { rows[i].style.display=''})")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1157, in execute_javascript
+    return get_browser().execute_script(script, *args)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 635, in execute_script
+    'args': converted_args})['value']
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Unexpected token ')'
+  (Session info: chrome=77.0.3865.120)
+
+
+12:57:14.648 INFO Test Result: CODE ERROR

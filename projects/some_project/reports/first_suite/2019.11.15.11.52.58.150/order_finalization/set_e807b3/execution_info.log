@@ -1,0 +1,21 @@
+11:53:19.933 INFO Test execution started: order_finalization
+11:53:19.934 INFO Browser: chrome
+11:53:19.934 INFO Environment: test_env
+11:53:19.934 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:53:23.100 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:53:31.072 INFO Click addNewOrderButton
+11:53:32.860 INFO Waiting for 3 seconds
+11:53:35.897 INFO Click orderTypeDropdown
+11:53:36.002 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+11:53:37.795 INFO Write 'test_name' in element nameInput
+11:53:37.991 INFO Waiting for 3 seconds
+11:53:40.993 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+11:53:41.019 INFO Click addToOrderButton
+11:53:45.569 INFO Click newOrderItemButton
+11:53:47.042 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+11:53:48.670 INFO Write '1' in element numberOfPages
+11:53:48.753 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+11:53:48.773 INFO Click addToOrderButton
+11:53:49.618 INFO Waiting for 3 seconds
+11:53:55.260 INFO Test Result: CODE ERROR

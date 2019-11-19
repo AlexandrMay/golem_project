@@ -1,0 +1,28 @@
+14:18:44.166 INFO Test execution started: second_test
+14:18:44.167 INFO Browser: chrome
+14:18:44.167 INFO Environment: test_env
+14:18:44.168 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:18:47.371 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:18:54.441 INFO Click addNewOrderButton
+14:18:55.860 INFO Waiting for 3 seconds
+14:18:58.903 INFO Click orderTypeDropdown
+14:18:59.021 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+14:19:00.805 INFO Click documentTypeDropdown
+14:19:00.901 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+14:19:00.974 INFO Write '1' in element numberOfPages
+14:19:01.074 INFO Write '1' in element numberOfLots
+14:19:01.178 INFO Click partiesTab
+14:19:01.312 INFO Write 'asd' in element //input[@placeholder='First Name']
+14:19:01.450 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+14:19:01.467 INFO Click addToOrderButton
+14:19:01.886 WARNING Action assert_equals is deprecated
+14:19:01.886 INFO Assert that Please Enter Account OR Email OR Name equals Please Enter Account OR Email OR Name
+14:19:01.887 INFO Test end
+14:19:04.449 INFO Test Result: SUCCESS

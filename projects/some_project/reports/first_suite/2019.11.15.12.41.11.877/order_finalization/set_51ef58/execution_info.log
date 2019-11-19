@@ -1,0 +1,30 @@
+12:41:33.776 INFO Test execution started: order_finalization
+12:41:33.777 INFO Browser: chrome-remote
+12:41:33.777 INFO Environment: test_env
+12:41:33.778 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:41:34.435 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:41:46.273 INFO Click addNewOrderButton
+12:41:48.696 INFO Waiting for 3 seconds
+12:41:51.718 INFO Click orderTypeDropdown
+12:41:51.943 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+12:41:55.794 INFO Write 'test_name' in element nameInput
+12:41:56.002 INFO Waiting for 3 seconds
+12:41:59.003 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+12:41:59.076 INFO Click addToOrderButton
+12:42:05.593 INFO Click newOrderItemButton
+12:42:07.455 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+12:42:09.158 INFO Write '1' in element numberOfPages
+12:42:09.259 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+12:42:09.321 INFO Click addToOrderButton
+12:42:10.160 INFO Waiting for 3 seconds
+12:42:13.162 ERROR TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_finalization.py", line 33, in test
+    print(a.get_element_text(new_order_page_form.findElementByTitle('Price', 2)))
+TypeError: findElementByTitle() missing 1 required positional argument: 'tableId'
+
+12:42:13.439 INFO Close browser
+12:42:13.519 INFO Test Result: CODE ERROR

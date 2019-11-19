@@ -1,0 +1,20 @@
+11:31:59.237 INFO Test execution started: func
+11:31:59.237 INFO Browser: chrome
+11:31:59.238 INFO Environment: test_env
+11:31:59.238 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:32:02.523 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:32:12.086 INFO Click addNewOrderButton
+11:32:17.123 INFO Waiting for 3 seconds
+11:32:26.778 INFO Click orderTypeDropdown
+11:32:26.905 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+11:32:28.469 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+11:32:28.506 ERROR NameError: name 'new_order_page_footer' is not defined
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\func.py", line 20, in test
+    a.click(new_order_page_footer.addToOrderButton)
+NameError: name 'new_order_page_footer' is not defined
+
+11:32:31.132 INFO Test Result: CODE ERROR

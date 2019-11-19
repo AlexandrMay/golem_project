@@ -1,0 +1,14 @@
+13:22:53.765 INFO Test execution started: second_test
+13:22:53.766 INFO Browser: chrome-remote
+13:22:53.766 INFO Environment: test_env
+13:22:53.766 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    alert_text: Please Enter Account OR Email OR Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:22:54.440 INFO Test end
+13:22:54.614 INFO Test Result: SUCCESS

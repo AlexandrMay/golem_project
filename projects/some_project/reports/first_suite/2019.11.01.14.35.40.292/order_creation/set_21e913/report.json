@@ -1,0 +1,91 @@
+{
+    "test_case": "order_creation",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click documentTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click partiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'fname' in element //input[@placeholder='First Name']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'fname' in element //input[@placeholder='First Name']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click propertiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_5dda8.png",
+            "error": {
+                "message": "ElementNotFound: Element .display-inline-block parcelid-field floating-field > input not found using selector css:'.display-inline-block parcelid-field floating-field > input'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_creation.py\", line 25, in test\n    a.send_keys(new_order_page_form.parcelIdInput, data.parceId)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1619, in send_keys\n    element = get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element .display-inline-block parcelid-field floating-field > input not found using selector css:'.display-inline-block parcelid-field floating-field > input'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element .display-inline-block parcelid-field floating-field > input not found using selector css:'.display-inline-block parcelid-field floating-field > input'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_creation.py\", line 25, in test\n    a.send_keys(new_order_page_form.parcelIdInput, data.parceId)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1619, in send_keys\n    element = get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element .display-inline-block parcelid-field floating-field > input not found using selector css:'.display-inline-block parcelid-field floating-field > input'\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "order_type": "'Real Property Recordings'",
+        "document_type": "'ABANDONMENT'",
+        "num_of_pages": "'1'",
+        "section": "'GRANTEE'",
+        "first_name": "'fname'",
+        "section2": "'GRANTEE'",
+        "parceId": "'1'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "Real Property Recordings",
+    "test_elapsed_time": 40.77,
+    "test_timestamp": "2019.11.01.14.35.40.298"
+}

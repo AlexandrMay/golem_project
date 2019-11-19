@@ -1,0 +1,18 @@
+18:13:43.420 INFO Test execution started: capture
+18:13:43.421 INFO Browser: chrome
+18:13:43.421 INFO Environment: test_env
+18:13:43.421 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+18:13:46.689 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+18:13:56.173 INFO Click verificationTab
+18:13:58.659 INFO Waiting for 3 seconds
+18:14:01.662 ERROR TypeError: runningManByDocNumber() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    a.click(new_order_page_form.runningManByDocNumber('10151901', 12))
+TypeError: runningManByDocNumber() takes 1 positional argument but 2 were given
+
+18:14:02.059 INFO Close browser
+18:14:04.214 INFO Test Result: CODE ERROR

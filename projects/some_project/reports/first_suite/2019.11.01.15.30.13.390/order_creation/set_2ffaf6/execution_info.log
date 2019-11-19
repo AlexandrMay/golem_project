@@ -1,0 +1,27 @@
+15:30:13.393 INFO Test execution started: order_creation
+15:30:13.393 INFO Browser: chrome
+15:30:13.394 INFO Environment: test_env
+15:30:13.394 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTOR
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+15:30:16.629 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+15:30:24.323 INFO Click addNewOrderButton
+15:30:26.180 INFO Waiting for 3 seconds
+15:30:29.202 INFO Click orderTypeDropdown
+15:30:29.312 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+15:30:32.923 INFO Click documentTypeDropdown
+15:30:33.072 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+15:30:33.168 INFO Write '1' in element numberOfPages
+15:30:33.275 INFO Click partiesTab
+15:30:33.419 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTOR']/parent::div/following-sibling::div//input[@placeholder='First Name']
+15:30:33.689 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/parent::div/following-sibling::div//input[@placeholder='First Name']
+15:30:33.856 INFO Click propertiesTab
+15:30:33.927 INFO Write '1' in element partiesTab
+15:30:34.001 INFO Test end
+15:30:36.516 INFO Test Result: SUCCESS

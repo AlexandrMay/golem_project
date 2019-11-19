@@ -1,0 +1,24 @@
+14:43:45.757 INFO Test execution started: order_capturing
+14:43:45.758 INFO Browser: chrome
+14:43:45.758 INFO Environment: test_env
+14:43:45.758 INFO Using data:
+    doc_group: REAL PROPERTY
+    doc_type: ABANDONMENT
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:43:48.976 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:43:57.435 INFO Click captureTab
+14:44:02.375 INFO Waiting for 3 seconds
+14:44:05.417 INFO Click startScanButton
+14:44:08.184 INFO Waiting for 3 seconds
+14:44:11.226 INFO Click //a[@class='startBatchScanBtn clickable']
+14:44:11.307 INFO Waiting for 30 seconds
+14:44:41.347 INFO Click editButton
+14:44:41.474 INFO Write 'REAL PROPERTY' in element //div[@class='floating-field']/input
+14:44:41.641 INFO Press key: 'ENTER' in element //div[@class='floating-field']/input
+14:44:41.660 INFO Write 'ABANDONMENT' in element //div[@class='floating-field']/input
+14:44:41.799 INFO Press key: 'ENTER' in element //div[@class='floating-field']/input
+14:44:41.818 INFO Write '6446' in element //div[@class='floating-field']/input
+14:44:41.908 INFO Write '4' in element //div[@class='floating-field']/input
+14:44:41.942 INFO Waiting for 5 seconds
+14:44:46.944 INFO Test end
+14:44:49.502 INFO Test Result: SUCCESS

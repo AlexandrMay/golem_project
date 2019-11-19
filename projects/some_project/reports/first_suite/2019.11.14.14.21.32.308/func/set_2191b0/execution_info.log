@@ -1,0 +1,10 @@
+14:21:32.318 INFO Test execution started: func
+14:21:32.318 INFO Browser: chrome-remote
+14:21:32.319 INFO Environment: test_env
+14:21:32.319 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:21:34.090 ERROR TypeError: __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+14:21:34.093 INFO Test Result: CODE ERROR

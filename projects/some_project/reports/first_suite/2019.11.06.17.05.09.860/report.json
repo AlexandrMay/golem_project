@@ -1,0 +1,16 @@
+{
+    "tests": [],
+    "params": {
+        "browsers": [],
+        "processes": 1,
+        "environments": [],
+        "tags": [
+            "test"
+        ],
+        "remote_url": ""
+    },
+    "total_tests": 0,
+    "totals_by_result": {},
+    "net_elapsed_time": 0,
+    "has_finished": false
+}

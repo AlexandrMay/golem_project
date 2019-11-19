@@ -1,0 +1,29 @@
+13:09:34.870 INFO Test execution started: func
+13:09:34.871 INFO Browser: chrome
+13:09:34.871 INFO Environment: test_env
+13:09:34.871 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:09:38.072 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:09:47.953 INFO Click addNewOrderButton
+13:09:49.407 INFO Waiting for 3 seconds
+13:09:52.458 INFO Click orderTypeDropdown
+13:09:52.612 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+13:09:54.534 INFO Write 'test_name' in element nameInput
+13:09:54.733 INFO Waiting for 3 seconds
+13:09:57.734 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:09:57.796 INFO Click addToOrderButton
+13:10:02.753 INFO Click newOrderItemButton
+13:10:04.516 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+13:10:06.563 INFO Write '1' in element numberOfPages
+13:10:06.656 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:10:06.672 INFO Click addToOrderButton
+13:10:07.499 INFO Waiting for 3 seconds
+13:10:12.715 ERROR TypeError: list indices must be integers or slices, not ExtendedRemoteWebElement
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\func.py", line 31, in test
+    print(a.get_element_text(arr[i]))
+TypeError: list indices must be integers or slices, not ExtendedRemoteWebElement
+
+13:10:15.326 INFO Test Result: CODE ERROR

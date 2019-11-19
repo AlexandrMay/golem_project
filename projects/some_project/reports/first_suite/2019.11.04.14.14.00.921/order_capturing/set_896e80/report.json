@@ -1,0 +1,59 @@
+{
+    "test_case": "order_capturing",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click captureTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click startScanButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //a[@class='startBatchScanBtn clickable']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click editButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '4' in element //div[@class='floating-field']/input",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_1dcbe.png",
+            "error": {
+                "message": "ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=77.0.3865.120)\n",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 23, in test\n    a.send_keys(capture_tab_page.pagesInput(), a.get_element_text(capture_tab_page.imagesField))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1621, in send_keys\n    element.send_keys(text)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 479, in send_keys\n    'value': keys_to_typing(value)})\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 628, in _execute\n    return self._parent.execute(command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=77.0.3865.120)\n\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=77.0.3865.120)\n",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 23, in test\n    a.send_keys(capture_tab_page.pagesInput(), a.get_element_text(capture_tab_page.imagesField))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1621, in send_keys\n    element.send_keys(text)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 479, in send_keys\n    'value': keys_to_typing(value)})\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 628, in _execute\n    return self._parent.execute(command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=77.0.3865.120)\n\n"
+        }
+    ],
+    "description": "Order capturing flow",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 47.43,
+    "test_timestamp": "2019.11.04.14.14.00.936"
+}

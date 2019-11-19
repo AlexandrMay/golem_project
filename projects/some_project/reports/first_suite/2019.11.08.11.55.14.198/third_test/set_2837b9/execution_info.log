@@ -1,0 +1,32 @@
+11:56:23.360 INFO Test execution started: third_test
+11:56:23.362 INFO Browser: chrome
+11:56:23.365 INFO Environment: test_env
+11:56:23.366 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:56:26.630 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+11:56:35.752 INFO Waiting for 10 seconds
+11:56:45.858 INFO Click ordersTab
+11:56:50.260 INFO Waiting for 2 seconds
+11:56:52.355 INFO Click captureTab
+11:57:01.231 INFO Waiting for 2 seconds
+11:57:03.301 INFO Click indexingTab
+11:57:11.921 INFO Waiting for 2 seconds
+11:57:13.964 INFO Click verificationTab
+11:57:22.539 INFO Waiting for 2 seconds
+11:57:24.593 WARNING Action assert_equals is deprecated
+11:57:24.594 INFO Assert that 1075 equals 1075
+11:57:24.594 WARNING Action assert_equals is deprecated
+11:57:24.595 INFO Assert that 958 equals 958
+11:57:24.596 WARNING Action assert_equals is deprecated
+11:57:24.596 INFO Assert that 123/149 equals 122/148
+11:57:24.599 ERROR AssertionError: expected 123/149 to equal 122/148
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\third_test.py", line 27, in test
+    a.assert_equals(valuesFromUI[i], valuesFromHeaders[i])
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 667, in assert_equals
+    assert actual_value == expected_value, 'expected {} to equal {}'.format(actual_value, expected_value)
+AssertionError: expected 123/149 to equal 122/148
+
+11:57:27.131 INFO Test Result: FAILURE

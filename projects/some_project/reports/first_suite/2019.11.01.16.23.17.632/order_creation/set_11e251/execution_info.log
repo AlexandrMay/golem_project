@@ -1,0 +1,52 @@
+16:23:17.635 INFO Test execution started: order_creation
+16:23:17.636 INFO Browser: chrome
+16:23:17.636 INFO Environment: test_env
+16:23:17.637 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTOR
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    name: auto test
+    payment_method: Cash
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+16:23:20.881 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+16:23:29.106 INFO Click addNewOrderButton
+16:23:30.438 INFO Waiting for 3 seconds
+16:23:33.450 INFO Click orderTypeDropdown
+16:23:33.536 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+16:23:38.495 INFO Click documentTypeDropdown
+16:23:38.666 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+16:23:38.752 INFO Write '1' in element numberOfPages
+16:23:38.915 INFO Click partiesTab
+16:23:39.039 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTOR']/parent::div/following-sibling::div//input[@placeholder='First Name']
+16:23:39.221 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/parent::div/following-sibling::div//input[@placeholder='First Name']
+16:23:39.385 INFO Click propertiesTab
+16:23:39.466 INFO Write '1' in element partiesTab
+16:23:39.556 INFO Write 'auto test' in element nameInput
+16:23:39.803 INFO Waiting for 3 seconds
+16:23:42.803 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+16:23:42.870 INFO Click addToOrderButton
+16:23:48.833 INFO Click checkoutButton
+16:23:53.554 INFO Click //select[@class='pagedropdown width80']
+16:23:53.642 INFO Click //select[@class='pagedropdown width80']/option[text()='Cash']
+16:23:53.693 INFO Write '30.00' in element //ul[@class='horizantal']/li[4]/input
+16:24:09.048 ERROR ElementNotFound: Element checkoutButton not found using selector id:'orderSummaryCheckout'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_creation.py", line 36, in test
+    a.click(new_order_page_form.checkoutButton)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 983, in click
+    element = browser.get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element checkoutButton not found using selector id:'orderSummaryCheckout'
+
+16:24:11.617 INFO Test Result: CODE ERROR

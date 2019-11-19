@@ -1,0 +1,24 @@
+14:06:15.319 INFO Test execution started: order_capturing
+14:06:15.320 INFO Browser: chrome
+14:06:15.320 INFO Environment: test_env
+14:06:15.321 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:06:18.536 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:06:26.836 INFO Click captureTab
+14:06:31.634 INFO Waiting for 3 seconds
+14:06:34.671 INFO Click startScanButton
+14:06:38.015 INFO Waiting for 3 seconds
+14:06:41.059 INFO Click //a[@class='startBatchScanBtn clickable']
+14:06:41.126 INFO Waiting for 20 seconds
+14:07:04.220 INFO Click editButton
+14:07:04.335 ERROR IndexError: list index out of range
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_capturing.py", line 23, in test
+    a.send_keys(capture_tab_page.pagesInput(), '4')
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\capture_tab_page.py", line 24, in pagesInput
+    return inputs[5]
+IndexError: list index out of range
+
+14:07:06.886 INFO Test Result: CODE ERROR

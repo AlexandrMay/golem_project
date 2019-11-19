@@ -1,0 +1,22 @@
+14:41:02.958 INFO Test execution started: func
+14:41:02.958 INFO Browser: chrome-remote
+14:41:02.958 INFO Environment: test_env
+14:41:02.959 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:41:03.838 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:41:17.844 INFO Click addNewOrderButton
+14:41:19.422 INFO Waiting for 3 seconds
+14:41:22.484 INFO Click orderTypeDropdown
+14:41:22.620 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+14:41:24.886 INFO Write 'test_name' in element nameInput
+14:41:25.116 INFO Waiting for 3 seconds
+14:41:28.117 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+14:41:28.202 INFO Click addToOrderButton
+14:41:35.187 INFO Click newOrderItemButton
+14:41:37.236 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+14:41:41.739 INFO Write '1' in element numberOfPages
+14:41:41.840 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+14:41:41.893 INFO Click addToOrderButton
+14:41:42.828 INFO Waiting for 3 seconds
+14:41:47.660 INFO Test end
+14:41:47.881 INFO Test Result: SUCCESS

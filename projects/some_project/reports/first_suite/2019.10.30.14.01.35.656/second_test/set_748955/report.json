@@ -1,0 +1,90 @@
+{
+    "test_case": "second_test",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Plats']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click documentTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfLots",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click partiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'asd' in element //input[@placeholder='First Name']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.moveBy()' with args '(0, 10)'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_f5431.png",
+            "error": {
+                "message": "JavascriptException: Message: javascript error: Failed to execute 'moveBy' on 'Window': 2 arguments required, but only 0 present.\n  (Session info: chrome=77.0.3865.120)\n",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py\", line 24, in test\n    a.execute_javascript('window.moveBy()', 0, 10)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1157, in execute_javascript\n    return get_browser().execute_script(script, *args)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 635, in execute_script\n    'args': converted_args})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.JavascriptException: Message: javascript error: Failed to execute 'moveBy' on 'Window': 2 arguments required, but only 0 present.\n  (Session info: chrome=77.0.3865.120)\n\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "JavascriptException: Message: javascript error: Failed to execute 'moveBy' on 'Window': 2 arguments required, but only 0 present.\n  (Session info: chrome=77.0.3865.120)\n",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py\", line 24, in test\n    a.execute_javascript('window.moveBy()', 0, 10)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1157, in execute_javascript\n    return get_browser().execute_script(script, *args)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 635, in execute_script\n    'args': converted_args})['value']\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 320, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.JavascriptException: Message: javascript error: Failed to execute 'moveBy' on 'Window': 2 arguments required, but only 0 present.\n  (Session info: chrome=77.0.3865.120)\n\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "order_type": "'Plats'",
+        "document_type": "'CORRECTION OF PLAT (PL)'",
+        "num_of_pages": "'1'",
+        "num_of_lots": "'1'",
+        "section": "'GRANTOR'",
+        "first_name": "'First Name'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "Plats",
+    "test_elapsed_time": 21.34,
+    "test_timestamp": "2019.10.30.14.01.35.658"
+}

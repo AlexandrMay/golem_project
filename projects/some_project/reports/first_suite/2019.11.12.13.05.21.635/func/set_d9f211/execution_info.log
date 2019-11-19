@@ -1,0 +1,35 @@
+13:05:21.643 INFO Test execution started: func
+13:05:21.643 INFO Browser: chrome
+13:05:21.644 INFO Environment: test_env
+13:05:21.644 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:05:24.816 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:05:34.143 INFO Click addNewOrderButton
+13:05:35.777 INFO Waiting for 3 seconds
+13:05:38.816 INFO Click orderTypeDropdown
+13:05:38.928 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+13:05:40.401 INFO Write 'test_name' in element nameInput
+13:05:40.578 INFO Waiting for 3 seconds
+13:05:43.581 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:05:43.611 INFO Click addToOrderButton
+13:05:48.655 INFO Click newOrderItemButton
+13:05:50.353 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+13:05:52.598 INFO Write '1' in element numberOfPages
+13:05:52.686 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+13:05:52.713 INFO Click addToOrderButton
+13:05:53.777 INFO Waiting for 3 seconds
+13:05:57.804 ERROR IncorrectSelectorType: Selector is not a valid option
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\func.py", line 29, in test
+    a.get_element_text(new_order_page_form.titleElements())
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1259, in get_element_text
+    element = get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 118, in _find
+    raise IncorrectSelectorType('Selector is not a valid option')
+golem.core.exceptions.IncorrectSelectorType: Selector is not a valid option
+
+13:06:00.353 INFO Test Result: CODE ERROR

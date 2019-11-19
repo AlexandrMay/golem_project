@@ -1,0 +1,58 @@
+{
+    "tests": [
+        {
+            "test_set": "set_9b5fb6",
+            "module": "",
+            "sub_modules": [],
+            "name": "capture",
+            "full_name": "capture",
+            "result": "code error",
+            "test_elapsed_time": 22.66,
+            "start_date_time": "2019/11/15 13:31",
+            "browser": "chrome",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_e42203",
+            "module": "",
+            "sub_modules": [],
+            "name": "order_finalization",
+            "full_name": "order_finalization",
+            "result": "code error",
+            "test_elapsed_time": 38.06,
+            "start_date_time": "2019/11/15 13:31",
+            "browser": "chrome",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 2,
+    "totals_by_result": {
+        "code error": 2
+    },
+    "net_elapsed_time": 60.74,
+    "has_finished": false
+}

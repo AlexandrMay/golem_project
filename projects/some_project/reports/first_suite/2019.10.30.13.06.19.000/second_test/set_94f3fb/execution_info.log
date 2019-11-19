@@ -1,0 +1,46 @@
+13:06:19.003 INFO Test execution started: second_test
+13:06:19.004 INFO Browser: chrome
+13:06:19.004 INFO Environment: test_env
+13:06:19.004 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:06:22.275 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:06:29.525 INFO Click addNewOrderButton
+13:06:30.928 INFO Waiting for 3 seconds
+13:06:33.941 INFO Click orderTypeDropdown
+13:06:34.031 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+13:06:35.978 INFO Click documentTypeDropdown
+13:06:36.077 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+13:06:36.149 INFO Write '1' in element numberOfPages
+13:06:36.244 INFO Write '1' in element numberOfLots
+13:06:36.351 INFO Click partiesTab
+13:06:36.524 INFO Write 'asd' in element //input[@placeholder='First Name']
+13:06:36.642 INFO Click addToOrderButton
+13:06:36.678 ERROR ElementClickInterceptedException: Message: element click intercepted: Element <input isagevalid="False" isbirthcertificate="False" isdeathcertificate="False" ismanualfeedistributionenabled="False" ismanualfeedistributionenabledoit="False" ispaymentavailable="False" mlvalidationwarningvisible="False" class="btn-orange" data-bind="enable: isValid() &amp;&amp; !Disabled()" data-submit-url="https://crs.qa.kofile.com/69999/Order" data-url="https://crs.qa.kofile.com/69999/Order" id="addToOrder" name="action:CreateNewOrder" title="Add To Order" type="submit" value="Add To Order"> is not clickable at point (864, 910). Other element would receive the click: <div id="footerinner">...</div>
+  (Session info: chrome=77.0.3865.120)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 24, in test
+    a.click(new_order_page_form.addToOrderButton)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 985, in click
+    element.click()
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input isagevalid="False" isbirthcertificate="False" isdeathcertificate="False" ismanualfeedistributionenabled="False" ismanualfeedistributionenabledoit="False" ispaymentavailable="False" mlvalidationwarningvisible="False" class="btn-orange" data-bind="enable: isValid() &amp;&amp; !Disabled()" data-submit-url="https://crs.qa.kofile.com/69999/Order" data-url="https://crs.qa.kofile.com/69999/Order" id="addToOrder" name="action:CreateNewOrder" title="Add To Order" type="submit" value="Add To Order"> is not clickable at point (864, 910). Other element would receive the click: <div id="footerinner">...</div>
+  (Session info: chrome=77.0.3865.120)
+
+
+13:06:39.279 INFO Test Result: CODE ERROR

@@ -1,0 +1,129 @@
+{
+    "tests": [
+        {
+            "test_set": "set_b43163",
+            "module": "",
+            "sub_modules": [],
+            "name": "first_test",
+            "full_name": "first_test",
+            "result": "success",
+            "test_elapsed_time": 21.91,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_da26b4",
+            "module": "",
+            "sub_modules": [],
+            "name": "first_test",
+            "full_name": "first_test",
+            "result": "code error",
+            "test_elapsed_time": 19.72,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "firefox (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_041d26",
+            "module": "",
+            "sub_modules": [],
+            "name": "second_test",
+            "full_name": "second_test",
+            "result": "code error",
+            "test_elapsed_time": 19.5,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "firefox (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_d82bea",
+            "module": "",
+            "sub_modules": [],
+            "name": "second_test",
+            "full_name": "second_test",
+            "result": "success",
+            "test_elapsed_time": 25.95,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_421827",
+            "module": "",
+            "sub_modules": [],
+            "name": "third_test",
+            "full_name": "third_test",
+            "result": "code error",
+            "test_elapsed_time": 13.41,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "firefox (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        },
+        {
+            "test_set": "set_daa79b",
+            "module": "",
+            "sub_modules": [],
+            "name": "third_test",
+            "full_name": "third_test",
+            "result": "success",
+            "test_elapsed_time": 55.31,
+            "start_date_time": "2019/10/30 11:04",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome-remote",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            },
+            {
+                "name": "firefox-remote",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 2,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": "http://localhost:4446/wd/hub"
+    },
+    "total_tests": 6,
+    "totals_by_result": {
+        "success": 3,
+        "code error": 3
+    },
+    "net_elapsed_time": 98.27,
+    "has_finished": false
+}

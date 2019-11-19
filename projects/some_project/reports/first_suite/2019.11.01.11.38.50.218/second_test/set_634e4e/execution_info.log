@@ -1,0 +1,10 @@
+11:38:50.221 INFO Test execution started: second_test
+11:38:50.222 INFO Browser: chrome-remote
+11:38:50.222 INFO Environment: test_env
+11:38:50.222 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+11:38:50.223 ERROR FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py'
+Traceback (most recent call last):
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\second_test.py'
+
+11:38:50.224 INFO Test Result: CODE ERROR

@@ -1,0 +1,37 @@
+12:03:33.870 INFO Test execution started: second_test
+12:03:33.871 INFO Browser: chrome
+12:03:33.871 INFO Environment: test_env
+12:03:33.871 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+     first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:03:37.079 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:03:44.985 INFO Click addNewOrderButton
+12:03:46.335 INFO Waiting for 3 seconds
+12:03:49.357 INFO Click orderTypeDropdown
+12:03:49.454 INFO Click //select[@id='orderTypeId']/option[text()='Plats']
+12:03:53.558 INFO Click documentTypeDropdown
+12:03:53.651 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='CORRECTION OF PLAT (PL)']
+12:03:53.724 INFO Write '1' in element numberOfPages
+12:03:53.817 INFO Write '1' in element numberOfLots
+12:03:53.922 INFO Click partiesTab
+12:04:09.356 ERROR ElementNotFound: Element firstNameInput not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTOR']//div[@class='floating-field parties-inputs']/input[@class='wide-input floating-input FirstName']'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 23, in test
+    a.send_keys(new_order_page_form.firstNameInput, 'asd')
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1619, in send_keys
+    element = get_browser().find(element)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 177, in find
+    return common._find(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 122, in _find
+    element_name, timeout, wait_displayed)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element firstNameInput not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTOR']//div[@class='floating-field parties-inputs']/input[@class='wide-input floating-input FirstName']'
+
+12:04:11.859 INFO Test Result: CODE ERROR

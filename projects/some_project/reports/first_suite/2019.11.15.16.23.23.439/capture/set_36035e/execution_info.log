@@ -1,0 +1,40 @@
+16:23:23.446 INFO Test execution started: capture
+16:23:23.447 INFO Browser: chrome
+16:23:23.447 INFO Environment: test_env
+16:23:23.447 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+16:23:26.614 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+16:23:36.365 INFO Click captureTab
+16:23:40.424 INFO Waiting for 3 seconds
+16:23:56.656 ERROR StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    new_order_page_form.printMatrix()
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 45, in printMatrix
+    for row in rowsWithColumns():
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 40, in rowsWithColumns
+    b = rows()[i].find_all(xpath="/td")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_webelement.py", line 91, in find_all
+    return _find_all(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 194, in _find_all
+    webelements = self.find_elements_by_xpath(xpath)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 381, in find_elements_by_xpath
+    return self.find_elements(by=By.XPATH, value=xpath)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 680, in find_elements
+    {"using": by, "value": value})['value']
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+
+
+16:23:57.054 INFO Close browser
+16:23:59.244 INFO Test Result: CODE ERROR

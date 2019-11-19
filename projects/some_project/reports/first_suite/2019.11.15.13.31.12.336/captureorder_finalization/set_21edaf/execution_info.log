@@ -1,0 +1,10 @@
+13:31:12.339 INFO Test execution started: captureorder_finalization
+13:31:12.340 INFO Browser: chrome
+13:31:12.340 INFO Environment: test_env
+13:31:12.341 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:31:12.341 ERROR FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\captureorder_finalization.py'
+Traceback (most recent call last):
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\captureorder_finalization.py'
+
+13:31:12.343 INFO Test Result: CODE ERROR

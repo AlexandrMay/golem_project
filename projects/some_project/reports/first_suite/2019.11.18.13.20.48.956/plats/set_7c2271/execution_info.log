@@ -1,0 +1,18 @@
+13:20:48.968 INFO Test execution started: plats
+13:20:48.969 INFO Browser: chrome
+13:20:48.969 INFO Environment: test_env
+13:20:48.969 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:20:52.155 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:21:01.064 INFO Waiting for 3 seconds
+13:21:06.695 ERROR IndexError: list index out of range
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\plats.py", line 17, in test
+    a.click(new_order_page_form.runningManOfOrder('20191001000219'))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 70, in runningManOfOrder
+    return runningMan()[(findRawIndexByText(orderNumber))]
+IndexError: list index out of range
+
+13:21:09.239 INFO Test Result: CODE ERROR

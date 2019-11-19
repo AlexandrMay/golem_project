@@ -1,0 +1,28 @@
+17:37:27.423 INFO Test execution started: func2
+17:37:27.423 INFO Browser: chrome
+17:37:27.424 INFO Environment: test_env
+17:37:27.424 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+17:37:30.649 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+17:37:38.622 INFO Click addNewOrderButton
+17:37:40.098 INFO Waiting for 3 seconds
+17:37:43.130 INFO Click orderTypeDropdown
+17:37:43.246 INFO Click //select[@id='orderTypeId']/option[text()='Governmentals']
+17:37:45.504 INFO Write 'test_name' in element nameInput
+17:37:45.694 INFO Waiting for 3 seconds
+17:37:48.709 INFO Click documentTypeDropdown
+17:37:48.812 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ADOPTION PETITION']
+17:37:48.884 INFO Write '1' in element numberOfPages
+17:37:48.984 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+17:37:49.063 INFO Click addToOrderButton
+17:37:50.097 ERROR IndexError: list index out of range
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\func2.py", line 29, in test
+    print(a.get_element_text(table.findElementByTitle('none', 3)))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 66, in findElementByTitle
+    return rawElements(raw)[1]
+IndexError: list index out of range
+
+17:37:52.866 INFO Test Result: CODE ERROR

@@ -1,0 +1,21 @@
+13:10:51.532 INFO Test execution started: second_test
+13:10:51.533 INFO Browser: chrome-remote
+13:10:51.533 INFO Environment: test_env
+13:10:51.534 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    alert_text: Please Enter Account OR Email OR Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:10:52.198 ERROR TypeError: 'bool' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 39, in test
+    print(data[0])
+TypeError: 'bool' object is not subscriptable
+
+13:10:52.374 INFO Test Result: CODE ERROR

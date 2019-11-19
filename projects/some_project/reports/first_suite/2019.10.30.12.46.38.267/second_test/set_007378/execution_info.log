@@ -1,0 +1,23 @@
+12:46:38.271 INFO Test execution started: second_test
+12:46:38.271 INFO Browser: chrome
+12:46:38.271 INFO Environment: test_env
+12:46:38.272 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+     first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:46:41.491 ERROR ImportError: Traceback (most recent call last):
+NameError: name 'grantorData' is not defined
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 142, in import_modules
+    page.split('.'))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner_utils.py", line 26, in import_page_into_test
+    raise ImportError(error)
+ImportError: Traceback (most recent call last):
+NameError: name 'grantorData' is not defined
+
+
+12:46:41.495 INFO Test Result: CODE ERROR

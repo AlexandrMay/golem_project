@@ -1,0 +1,11 @@
+12:59:23.166 INFO Test execution started: capture
+12:59:23.167 INFO Browser: chrome-remote
+12:59:23.167 INFO Environment: test_env
+12:59:23.167 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:59:23.768 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:59:35.301 INFO Click captureTab
+12:59:39.668 INFO Waiting for 3 seconds
+12:59:44.194 INFO Test end
+12:59:44.344 INFO Close browser
+12:59:44.407 INFO Test Result: SUCCESS

@@ -1,0 +1,22 @@
+{
+    "test_case": "order_capturing",
+    "result": "code error",
+    "steps": [],
+    "errors": [
+        {
+            "message": "SyntaxError: EOL while scanning string literal",
+            "description": "Traceback (most recent call last):\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\actions_helper\\my_actions.py\", line 7\n    actions.execute_javascript('\n                               ^\nSyntaxError: EOL while scanning string literal\n"
+        }
+    ],
+    "description": null,
+    "browser": "chrome",
+    "test_data": {
+        "doc_group": "'REAL PROPERTY'",
+        "doc_type": "'ABANDONMENT'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "REAL PROPERTY",
+    "test_elapsed_time": 0.01,
+    "test_timestamp": "2019.11.05.12.52.25.932"
+}

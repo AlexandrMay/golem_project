@@ -1,0 +1,51 @@
+{
+    "test_case": "first_test",
+    "result": "success",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click ordersTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Assert that 856 equals 856",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Assert that 729 equals 729",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Assert that 99/120 equals 99/120",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Assert that 15/15 equals 15/15",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Test end",
+            "screenshot": "Test_end_58d8b.png",
+            "error": null
+        }
+    ],
+    "errors": [],
+    "description": "",
+    "browser": "chrome (remote)",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 24.6,
+    "test_timestamp": "2019.10.30.11.19.34.479"
+}

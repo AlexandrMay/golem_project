@@ -1,0 +1,32 @@
+14:27:57.293 INFO Test execution started: order_indexing
+14:27:57.294 INFO Browser: chrome
+14:27:57.294 INFO Environment: test_env
+14:27:57.295 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:28:00.542 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:28:09.848 INFO Click indexingTab
+14:28:17.040 INFO Execute javascript code 'var rows = document.querySelectorAll('tr'); for(let i = 0; i < rows.length; i++) { rows[i].style.display=''}' with args '()'
+14:28:17.118 INFO Execute javascript code 'document.querySelector('td > span:contains('20191101000013')').getBoundingClientRect()' with args '()'
+14:28:17.130 ERROR JavascriptException: Message: javascript error: missing ) after argument list
+  (Session info: chrome=77.0.3865.120)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_indexing.py", line 18, in test
+    print(my_actions.getCoordsOfElement())
+  File "C:\Users\alexandr.may\testdir\projects\some_project\actions_helper\my_actions.py", line 10, in getCoordsOfElement
+    actions.execute_javascript("document.querySelector('td > span:contains('20191101000013')').getBoundingClientRect()")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 1157, in execute_javascript
+    return get_browser().execute_script(script, *args)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 635, in execute_script
+    'args': converted_args})['value']
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: missing ) after argument list
+  (Session info: chrome=77.0.3865.120)
+
+
+14:28:19.651 INFO Test Result: CODE ERROR

@@ -1,0 +1,38 @@
+16:29:46.771 INFO Test execution started: order_creation
+16:29:46.772 INFO Browser: chrome
+16:29:46.772 INFO Environment: test_env
+16:29:46.773 INFO Using data:
+    order_type: Real Property Recordings
+    document_type: ABANDONMENT
+    num_of_pages: 1
+    section: GRANTOR
+    first_name: fname
+    section2: GRANTEE
+    parceId: 1
+    name: auto test
+    payment_method: Cash
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+16:29:50.047 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+16:30:03.403 INFO Click addNewOrderButton
+16:30:06.264 INFO Waiting for 3 seconds
+16:30:09.304 INFO Click orderTypeDropdown
+16:30:09.401 INFO Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']
+16:30:14.677 INFO Click documentTypeDropdown
+16:30:14.802 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']
+16:30:14.905 INFO Write '1' in element numberOfPages
+16:30:15.029 INFO Click partiesTab
+16:30:15.251 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTOR']/parent::div/following-sibling::div//input[@placeholder='First Name']
+16:30:15.406 INFO Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/parent::div/following-sibling::div//input[@placeholder='First Name']
+16:30:15.557 INFO Click propertiesTab
+16:30:15.630 INFO Write '1' in element partiesTab
+16:30:15.704 INFO Write 'auto test' in element nameInput
+16:30:15.938 INFO Waiting for 3 seconds
+16:30:18.938 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+16:30:19.013 INFO Click addToOrderButton
+16:30:24.638 INFO Click checkoutButton
+16:30:26.930 INFO Click //select[@class='pagedropdown width80']
+16:30:27.027 INFO Click //select[@class='pagedropdown width80']/option[text()='Cash']
+16:30:27.114 INFO Write '30.00' in element //ul[@class='horizantal']/li[4]/input
+16:30:27.220 INFO Click orderPaymentCheckout
+16:30:41.805 INFO Test end
+16:30:44.315 INFO Test Result: SUCCESS

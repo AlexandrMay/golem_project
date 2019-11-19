@@ -1,0 +1,125 @@
+{
+    "test_case": "order_creation",
+    "result": "success",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click documentTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click partiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTOR']/parent::div/following-sibling::div//input[@placeholder='First Name']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'fname' in element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/parent::div/following-sibling::div//input[@placeholder='First Name']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click propertiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element partiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'auto test' in element nameInput",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.scrollTo(0, 1000)' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addToOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click checkoutButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@class='pagedropdown width80']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@class='pagedropdown width80']/option[text()='Cash']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '30.00' in element //ul[@class='horizantal']/li[3]/input",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Test end",
+            "screenshot": "Test_end_2b7cf.png",
+            "error": null
+        }
+    ],
+    "errors": [],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "order_type": "'Real Property Recordings'",
+        "document_type": "'ABANDONMENT'",
+        "num_of_pages": "'1'",
+        "section": "'GRANTOR'",
+        "first_name": "'fname'",
+        "section2": "'GRANTEE'",
+        "parceId": "'1'",
+        "name": "'auto test'",
+        "payment_method": "'Cash'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "Real Property Recordings",
+    "test_elapsed_time": 52.27,
+    "test_timestamp": "2019.11.01.16.19.44.411"
+}

@@ -1,0 +1,10 @@
+13:28:30.163 INFO Test execution started: plats
+13:28:30.164 INFO Browser: chrome
+13:28:30.164 INFO Environment: test_env
+13:28:30.164 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:28:33.378 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:28:42.230 INFO Waiting for 3 seconds
+13:28:46.271 INFO Click //td/a[@class='iconredirectorder ']
+13:28:46.813 INFO Test end
+13:28:53.655 INFO Test Result: SUCCESS

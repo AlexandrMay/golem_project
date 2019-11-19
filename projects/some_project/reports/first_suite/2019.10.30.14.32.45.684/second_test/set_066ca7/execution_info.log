@@ -1,0 +1,24 @@
+14:32:45.687 INFO Test execution started: second_test
+14:32:45.688 INFO Browser: chrome
+14:32:45.688 INFO Environment: test_env
+14:32:45.689 INFO Using data:
+    order_type: Plats
+    document_type: CORRECTION OF PLAT (PL)
+    num_of_pages: 1
+    num_of_lots: 1
+    section: GRANTOR
+    first_name: First Name
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:32:48.900 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:32:56.520 INFO Click addNewOrderButton
+14:32:58.490 INFO Waiting for 3 seconds
+14:33:01.508 INFO Click orderTypeDropdown
+14:33:01.587 ERROR NameError: name 'second_test' is not defined
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\second_test.py", line 18, in test
+    a.click(new_order_page_header.orderTypeDropdownElement(second_test.order_type))
+NameError: name 'second_test' is not defined
+
+14:33:04.141 INFO Test Result: CODE ERROR

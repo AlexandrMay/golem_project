@@ -1,0 +1,54 @@
+{
+    "test_case": "order_capturing",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click captureTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click startScanButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //a[@class='startBatchScanBtn clickable']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click editButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_6824c.png",
+            "error": {
+                "message": "ElementNotFound: Element //input[@data-bind='numeric: Pages, valueUpdate:'blur''] not found using selector xpath:'//input[@data-bind='numeric: Pages, valueUpdate:'blur'']'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 23, in test\n    a.send_keys(capture_tab_page.pagesInput, '4')\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1619, in send_keys\n    element = get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //input[@data-bind='numeric: Pages, valueUpdate:'blur''] not found using selector xpath:'//input[@data-bind='numeric: Pages, valueUpdate:'blur'']'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element //input[@data-bind='numeric: Pages, valueUpdate:'blur''] not found using selector xpath:'//input[@data-bind='numeric: Pages, valueUpdate:'blur'']'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_capturing.py\", line 23, in test\n    a.send_keys(capture_tab_page.pagesInput, '4')\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 1619, in send_keys\n    element = get_browser().find(element)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //input[@data-bind='numeric: Pages, valueUpdate:'blur''] not found using selector xpath:'//input[@data-bind='numeric: Pages, valueUpdate:'blur'']'\n"
+        }
+    ],
+    "description": "Order capturing flow",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 63.0,
+    "test_timestamp": "2019.11.04.13.24.10.314"
+}

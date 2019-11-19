@@ -1,0 +1,76 @@
+{
+    "test_case": "order_creation",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Real Property Recordings']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click documentTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ABANDONMENT']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click partiesTab",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_cf346.png",
+            "error": {
+                "message": "ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_creation.py\", line 22, in test\n    a.send_keys(new_order_page_form.firstNameInput(data.section), data.first_name)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 9, in firstNameInput\n    return partiesSection(text).find(xpath=\"//input[@placeholder='First Name']\")\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 6, in partiesSection\n    return golemDriver.find(xpath=\"//div[@class='block-header-with-bg']/label[text()='{}']/div\".format(text))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_creation.py\", line 22, in test\n    a.send_keys(new_order_page_form.firstNameInput(data.section), data.first_name)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 9, in firstNameInput\n    return partiesSection(text).find(xpath=\"//input[@placeholder='First Name']\")\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 6, in partiesSection\n    return golemDriver.find(xpath=\"//div[@class='block-header-with-bg']/label[text()='{}']/div\".format(text))\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 177, in find\n    return common._find(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 122, in _find\n    element_name, timeout, wait_displayed)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element //div[@class='block-header-with-bg']/label[text()='GRANTEE']/div not found using selector xpath:'//div[@class='block-header-with-bg']/label[text()='GRANTEE']/div'\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "order_type": "'Real Property Recordings'",
+        "document_type": "'ABANDONMENT'",
+        "num_of_pages": "'1'",
+        "section": "'GRANTEE'",
+        "first_name": "'fname'",
+        "section2": "'GRANTEE'",
+        "parceId": "'1'",
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "Real Property Recordings",
+    "test_elapsed_time": 38.89,
+    "test_timestamp": "2019.11.01.14.37.57.640"
+}

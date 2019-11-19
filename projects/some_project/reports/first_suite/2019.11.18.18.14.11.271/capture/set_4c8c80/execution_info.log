@@ -1,0 +1,33 @@
+18:14:11.283 INFO Test execution started: capture
+18:14:11.283 INFO Browser: chrome
+18:14:11.284 INFO Environment: test_env
+18:14:11.284 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+18:14:14.510 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+18:14:24.522 INFO Click verificationTab
+18:14:25.645 INFO Waiting for 3 seconds
+18:14:28.681 INFO Click //table//td[contains(text(),'10151901')]/following-sibling::td/a[@class='iconredirectorder ']
+18:14:28.733 ERROR ElementClickInterceptedException: Message: element click intercepted: Element <a class="iconredirectorder " data-bind="click: $parent.detail,visible: $parent.getVisible('Detail',$data, $index)" href="javascript:void(0);"></a> is not clickable at point (1166, 912). Other element would receive the click: <div id="footerinner">...</div>
+  (Session info: chrome=78.0.3904.97)
+
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    a.click(new_order_page_form.runningManByDocNumber('10151901'))
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\actions.py", line 985, in click
+    element.click()
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a class="iconredirectorder " data-bind="click: $parent.detail,visible: $parent.getVisible('Detail',$data, $index)" href="javascript:void(0);"></a> is not clickable at point (1166, 912). Other element would receive the click: <div id="footerinner">...</div>
+  (Session info: chrome=78.0.3904.97)
+
+
+18:14:29.103 INFO Close browser
+18:14:31.266 INFO Test Result: CODE ERROR

@@ -1,0 +1,44 @@
+{
+    "test_case": "first_test",
+    "result": "failure",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Wait for element ('css', '#orders > a', 'ordersTab') to be displayed",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Assert that  equals 930",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Failure",
+            "screenshot": "Failure_65ae1.png",
+            "error": {
+                "message": "AssertionError: expected  to equal 930",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\first_test.py\", line 31, in test\n    a.assert_equals(valuesFromUI[i], receivedValues[i])\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 667, in assert_equals\n    assert actual_value == expected_value, 'expected {} to equal {}'.format(actual_value, expected_value)\nAssertionError: expected  to equal 930\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "AssertionError: expected  to equal 930",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\first_test.py\", line 31, in test\n    a.assert_equals(valuesFromUI[i], receivedValues[i])\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\actions.py\", line 667, in assert_equals\n    assert actual_value == expected_value, 'expected {} to equal {}'.format(actual_value, expected_value)\nAssertionError: expected  to equal 930\n"
+        }
+    ],
+    "description": "Test is checking the values from ui tabs and response of \"GetQueuesItemCounts\" query",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 13.94,
+    "test_timestamp": "2019.11.04.11.36.54.100"
+}

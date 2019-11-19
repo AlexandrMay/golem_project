@@ -1,0 +1,16 @@
+2019-11-14 14:21:32,318 root INFO Test execution started: func
+2019-11-14 14:21:32,318 root INFO Browser: chrome-remote
+2019-11-14 14:21:32,319 root INFO Environment: test_env
+2019-11-14 14:21:32,319 root INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+2019-11-14 14:21:32,328 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:4446/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any"}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY"}}
+2019-11-14 14:21:33,941 selenium.webdriver.remote.remote_connection DEBUG b'{\n  "value": {\n    "sessionId": "331253c1423eae813fda7bfbff341329",\n    "capabilities": {\n      "acceptInsecureCerts": false,\n      "browserName": "chrome",\n      "browserVersion": "78.0.3904.70",\n      "chrome": {\n        "chromedriverVersion": "78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs\\u002fbranch-heads\\u002f3904@{#800})",\n        "userDataDir": "\\u002ftmp\\u002f.com.google.Chrome.MUGqMX"\n      },\n      "goog:chromeOptions": {\n        "debuggerAddress": "localhost:35507"\n      },\n      "networkConnectionEnabled": false,\n      "pageLoadStrategy": "normal",\n      "platformName": "linux",\n      "proxy": {\n      },\n      "setWindowRect": true,\n      "strictFileInteractability": false,\n      "timeouts": {\n        "implicit": 0,\n        "pageLoad": 300000,\n        "script": 30000\n      },\n      "unhandledPromptBehavior": "dismiss and notify",\n      "webdriver.remote.sessionid": "331253c1423eae813fda7bfbff341329"\n    }\n  }\n}'
+2019-11-14 14:21:33,941 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2019-11-14 14:21:33,941 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:4446/wd/hub/session/331253c1423eae813fda7bfbff341329/window/maximize {}
+2019-11-14 14:21:34,089 selenium.webdriver.remote.remote_connection DEBUG b'{"value":{"height":1019,"width":1359,"x":0,"y":0}}'
+2019-11-14 14:21:34,090 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2019-11-14 14:21:34,090 root ERROR TypeError: __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+2019-11-14 14:21:34,093 root INFO Test Result: CODE ERROR

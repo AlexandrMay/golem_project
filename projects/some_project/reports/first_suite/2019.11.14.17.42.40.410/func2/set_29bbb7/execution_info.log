@@ -1,0 +1,28 @@
+17:42:40.426 INFO Test execution started: func2
+17:42:40.426 INFO Browser: chrome
+17:42:40.426 INFO Environment: test_env
+17:42:40.427 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+17:42:43.633 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+17:42:51.457 INFO Click addNewOrderButton
+17:42:53.448 INFO Waiting for 3 seconds
+17:42:56.461 INFO Click orderTypeDropdown
+17:42:56.554 INFO Click //select[@id='orderTypeId']/option[text()='Governmentals']
+17:42:58.313 INFO Write 'test_name' in element nameInput
+17:42:58.511 INFO Waiting for 3 seconds
+17:43:01.522 INFO Click documentTypeDropdown
+17:43:01.633 INFO Click //select[@id='Order_OrderItems[0]_Document_DocumentTypeId']/option[text()='ADOPTION PETITION']
+17:43:01.716 INFO Write '1' in element numberOfPages
+17:43:01.815 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+17:43:01.879 INFO Click addToOrderButton
+17:43:02.775 ERROR TypeError: rawElements() missing 1 required positional argument: 'index'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\func2.py", line 29, in test
+    print(a.get_element_text(table.findElementByTitle('none', 3)))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 66, in findElementByTitle
+    for i in range(len(rawElements())):
+TypeError: rawElements() missing 1 required positional argument: 'index'
+
+17:43:05.787 INFO Test Result: CODE ERROR

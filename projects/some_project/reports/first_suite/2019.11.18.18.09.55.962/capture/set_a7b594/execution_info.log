@@ -1,0 +1,13 @@
+18:09:55.974 INFO Test execution started: capture
+18:09:55.974 INFO Browser: chrome
+18:09:55.975 INFO Environment: test_env
+18:09:55.975 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+18:09:59.225 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+18:10:08.244 INFO Click verificationTab
+18:10:09.341 INFO Waiting for 3 seconds
+18:10:12.356 INFO Click //table//td[contains(text(),'10151901')]/following-sibling::td[12]
+18:10:12.406 INFO Waiting for 5 seconds
+18:10:17.407 INFO Test end
+18:10:17.766 INFO Close browser
+18:10:19.923 INFO Test Result: SUCCESS

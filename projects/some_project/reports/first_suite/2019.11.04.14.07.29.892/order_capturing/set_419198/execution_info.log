@@ -1,0 +1,16 @@
+14:07:29.903 INFO Test execution started: order_capturing
+14:07:29.904 INFO Browser: chrome
+14:07:29.904 INFO Environment: test_env
+14:07:29.905 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:07:33.098 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:07:43.119 INFO Click captureTab
+14:07:46.726 INFO Waiting for 3 seconds
+14:07:49.746 INFO Click startScanButton
+14:07:52.757 INFO Waiting for 3 seconds
+14:07:55.804 INFO Click //a[@class='startBatchScanBtn clickable']
+14:07:55.880 INFO Waiting for 20 seconds
+14:08:20.016 INFO Click editButton
+14:08:20.150 INFO Write '4' in element //div[@class='floating-field']/input
+14:08:20.203 INFO Test end
+14:08:22.780 INFO Test Result: SUCCESS

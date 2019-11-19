@@ -1,0 +1,22 @@
+13:23:01.091 INFO Test execution started: order_capturing
+13:23:01.092 INFO Browser: chrome
+13:23:01.092 INFO Environment: test_env
+13:23:01.093 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+13:23:04.249 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+13:23:13.876 INFO Click captureTab
+13:23:17.480 INFO Waiting for 3 seconds
+13:23:20.522 INFO Click startScanButton
+13:23:24.384 INFO Waiting for 3 seconds
+13:23:27.409 INFO Click //a[@class='startBatchScanBtn clickable']
+13:23:27.485 INFO Waiting for 20 seconds
+13:23:48.008 INFO Click editButton
+13:23:48.094 ERROR AttributeError: module 'golem.actions' has no attribute 'sendkeys'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_capturing.py", line 23, in test
+    a.sendkeys(capture_tab_page.pagesInput, '4')
+AttributeError: module 'golem.actions' has no attribute 'sendkeys'
+
+13:23:50.629 INFO Test Result: CODE ERROR

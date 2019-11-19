@@ -1,0 +1,15 @@
+12:52:25.933 INFO Test execution started: order_capturing
+12:52:25.934 INFO Browser: chrome
+12:52:25.934 INFO Environment: test_env
+12:52:25.934 INFO Using data:
+    doc_group: REAL PROPERTY
+    doc_type: ABANDONMENT
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:52:25.946 ERROR SyntaxError: EOL while scanning string literal
+Traceback (most recent call last):
+  File "C:\Users\alexandr.may\testdir\projects\some_project\actions_helper\my_actions.py", line 7
+    actions.execute_javascript('
+                               ^
+SyntaxError: EOL while scanning string literal
+
+12:52:25.947 INFO Test Result: CODE ERROR

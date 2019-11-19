@@ -1,0 +1,89 @@
+{
+    "test_case": "order_finalization",
+    "result": "code error",
+    "steps": [
+        {
+            "message": "Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addNewOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click orderTypeDropdown",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write 'test_name' in element nameInput",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.scrollTo(0, 1000)' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addToOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click newOrderItemButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Write '1' in element numberOfPages",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Execute javascript code 'window.scrollTo(0, 1000)' with args '()'",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Click addToOrderButton",
+            "screenshot": null,
+            "error": null
+        },
+        {
+            "message": "Error",
+            "screenshot": "Error_5f5a0.png",
+            "error": {
+                "message": "ConnectionAbortedError: [WinError 10053] \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u043d\u0430 \u0432\u0430\u0448\u0435\u043c \u0445\u043e\u0441\u0442-\u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0435 \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435",
+                "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_finalization.py\", line 33, in test\n    print(a.get_element_text(table.findElementByTitle('Price', 2)))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 65, in findElementByTitle\n    for i in range(len(titleElements())):\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 35, in titleElements\n    return golemDriver.find_all(xpath=\"//table/thead/tr/th\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 203, in find_all\n    return common._find_all(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 194, in _find_all\n    webelements = self.find_elements_by_xpath(xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 409, in find_elements_by_xpath\n    return self.find_elements(by=By.XPATH, value=xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 995, in find_elements\n    'value': value})['value'] or []\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 318, in execute\n    response = self.command_executor.execute(driver_command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 472, in execute\n    return self._request(command_info[0], url, body=data)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 495, in _request\n    self._conn.request(method, parsed_url.path, body, headers)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1244, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1290, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1239, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1065, in _send_output\n    self.send(chunk)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 987, in send\n    self.sock.sendall(data)\nConnectionAbortedError: [WinError 10053] \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u043d\u0430 \u0432\u0430\u0448\u0435\u043c \u0445\u043e\u0441\u0442-\u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0435 \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435\n"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "message": "ConnectionAbortedError: [WinError 10053] \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u043d\u0430 \u0432\u0430\u0448\u0435\u043c \u0445\u043e\u0441\u0442-\u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0435 \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435",
+            "description": "Traceback (most recent call last):\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 173, in run_test\n    self.test_module.test(execution.data)\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\tests\\order_finalization.py\", line 33, in test\n    print(a.get_element_text(table.findElementByTitle('Price', 2)))\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 65, in findElementByTitle\n    for i in range(len(titleElements())):\n  File \"C:\\Users\\alexandr.may\\testdir\\projects\\some_project\\pages\\new_order_page_form.py\", line 35, in titleElements\n    return golemDriver.find_all(xpath=\"//table/thead/tr/th\")\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 203, in find_all\n    return common._find_all(self, **kwargs)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\golem\\webdriver\\common.py\", line 194, in _find_all\n    webelements = self.find_elements_by_xpath(xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 409, in find_elements_by_xpath\n    return self.find_elements(by=By.XPATH, value=xpath)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 995, in find_elements\n    'value': value})['value'] or []\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 318, in execute\n    response = self.command_executor.execute(driver_command, params)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 472, in execute\n    return self._request(command_info[0], url, body=data)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 495, in _request\n    self._conn.request(method, parsed_url.path, body, headers)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1244, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1290, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1239, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 1065, in _send_output\n    self.send(chunk)\n  File \"c:\\users\\alexandr.may\\appdata\\local\\programs\\python\\python37-32\\lib\\http\\client.py\", line 987, in send\n    self.sock.sendall(data)\nConnectionAbortedError: [WinError 10053] \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u043d\u0430 \u0432\u0430\u0448\u0435\u043c \u0445\u043e\u0441\u0442-\u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u0435 \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435\n"
+        }
+    ],
+    "description": "",
+    "browser": "chrome",
+    "test_data": {
+        "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+    },
+    "environment": "test_env",
+    "set_name": "",
+    "test_elapsed_time": 37.3,
+    "test_timestamp": "2019.11.15.11.46.21.304"
+}

@@ -1,0 +1,8 @@
+14:20:02.636 INFO Test execution started: func
+14:20:02.636 INFO Browser: chrome-remote
+14:20:02.637 INFO Environment: test_env
+14:20:02.637 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:20:04.647 INFO Could not connect to port 4446 on host localhost
+14:20:04.649 INFO Could not get IP address for host: localhost
+14:20:06.747 INFO Test Result: CODE ERROR

@@ -1,0 +1,18 @@
+15:33:14.065 INFO Test execution started: capture
+15:33:14.066 INFO Browser: chrome
+15:33:14.066 INFO Environment: test_env
+15:33:14.067 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+15:33:17.253 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+15:33:27.154 INFO Click captureTab
+15:33:31.643 INFO Waiting for 3 seconds
+15:33:34.648 ERROR AttributeError: module 'new_order_page_form' has no attribute 'findElementByTitle'
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\capture.py", line 20, in test
+    print(a.get_element_text(new_order_page_form.findElementByTitle('Customer', 3)))
+AttributeError: module 'new_order_page_form' has no attribute 'findElementByTitle'
+
+15:33:35.049 INFO Close browser
+15:33:37.281 INFO Test Result: CODE ERROR

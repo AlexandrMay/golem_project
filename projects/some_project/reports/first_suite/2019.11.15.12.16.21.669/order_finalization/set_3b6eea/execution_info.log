@@ -1,0 +1,124 @@
+12:16:43.071 INFO Test execution started: order_finalization
+12:16:43.072 INFO Browser: chrome-remote
+12:16:43.072 INFO Environment: test_env
+12:16:43.073 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+12:16:44.101 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+12:16:56.151 INFO Click addNewOrderButton
+12:16:57.826 INFO Waiting for 3 seconds
+12:17:00.849 INFO Click orderTypeDropdown
+12:17:00.976 INFO Click //select[@id='orderTypeId']/option[text()='Alcohol Permit']
+12:17:02.594 INFO Write 'test_name' in element nameInput
+12:17:02.981 INFO Waiting for 3 seconds
+12:17:05.983 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+12:17:06.051 INFO Click addToOrderButton
+12:17:10.212 INFO Click newOrderItemButton
+12:17:11.641 INFO Click //select[@id='orderTypeId']/option[text()='Bond to Indemnify - Payment']
+12:17:13.072 INFO Write '1' in element numberOfPages
+12:17:13.159 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+12:17:13.213 INFO Click addToOrderButton
+12:17:14.033 INFO Waiting for 3 seconds
+12:17:17.071 ERROR WebDriverException: Message: Session [70dc7b5ce8d541ae5ac8e0b5845a4e91] was terminated due to CLIENT_STOPPED_SESSION
+Stacktrace:
+    at org.openqa.grid.internal.ActiveTestSessions.getExistingSession (ActiveTestSessions.java:115)
+    at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession (DefaultGridRegistry.java:387)
+    at org.openqa.grid.web.servlet.handler.RequestHandler.getSession (RequestHandler.java:241)
+    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:123)
+    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:85)
+    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:69)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)
+    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:865)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:535)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:146)
+    at org.seleniumhq.jetty9.security.SecurityHandler.handle (SecurityHandler.java:548)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:257)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:1595)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:255)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1340)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:203)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:473)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:1564)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:201)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1242)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:144)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)
+    at org.seleniumhq.jetty9.server.Server.handle (Server.java:503)
+    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:364)
+    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:260)
+    at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded (AbstractConnection.java:305)
+    at org.seleniumhq.jetty9.io.FillInterest.fillable (FillInterest.java:103)
+    at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run (ChannelEndPoint.java:118)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask (EatWhatYouKill.java:333)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce (EatWhatYouKill.java:310)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce (EatWhatYouKill.java:168)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run (EatWhatYouKill.java:126)
+    at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run (ReservedThreadExecutor.java:366)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:765)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run (QueuedThreadPool.java:683)
+    at java.lang.Thread.run (Thread.java:748)
+Traceback (most recent call last):
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\test_runner\test_runner.py", line 173, in run_test
+    self.test_module.test(execution.data)
+  File "C:\Users\alexandr.may\testdir\projects\some_project\tests\order_finalization.py", line 33, in test
+    print(a.get_element_text(tableAsd.findElementByTitle('Price', 2)))
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 66, in findElementByTitle
+    for i in range(len(titleElements())):
+  File "C:\Users\alexandr.may\testdir\projects\some_project\pages\new_order_page_form.py", line 35, in titleElements
+    return golemDriver.find_all(xpath="//table/thead/tr/th")
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\extended_driver.py", line 203, in find_all
+    return common._find_all(self, **kwargs)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\golem\webdriver\common.py", line 194, in _find_all
+    webelements = self.find_elements_by_xpath(xpath)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 409, in find_elements_by_xpath
+    return self.find_elements(by=By.XPATH, value=xpath)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 995, in find_elements
+    'value': value})['value'] or []
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 320, in execute
+    self.error_handler.check_response(response)
+  File "c:\users\alexandr.may\appdata\local\programs\python\python37-32\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Session [70dc7b5ce8d541ae5ac8e0b5845a4e91] was terminated due to CLIENT_STOPPED_SESSION
+Stacktrace:
+    at org.openqa.grid.internal.ActiveTestSessions.getExistingSession (ActiveTestSessions.java:115)
+    at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession (DefaultGridRegistry.java:387)
+    at org.openqa.grid.web.servlet.handler.RequestHandler.getSession (RequestHandler.java:241)
+    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:123)
+    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:85)
+    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:69)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)
+    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:865)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:535)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:146)
+    at org.seleniumhq.jetty9.security.SecurityHandler.handle (SecurityHandler.java:548)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:257)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:1595)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle (ScopedHandler.java:255)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1340)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:203)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:473)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:1564)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope (ScopedHandler.java:201)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1242)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:144)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:132)
+    at org.seleniumhq.jetty9.server.Server.handle (Server.java:503)
+    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:364)
+    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:260)
+    at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded (AbstractConnection.java:305)
+    at org.seleniumhq.jetty9.io.FillInterest.fillable (FillInterest.java:103)
+    at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run (ChannelEndPoint.java:118)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask (EatWhatYouKill.java:333)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce (EatWhatYouKill.java:310)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce (EatWhatYouKill.java:168)
+    at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run (EatWhatYouKill.java:126)
+    at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run (ReservedThreadExecutor.java:366)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:765)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run (QueuedThreadPool.java:683)
+    at java.lang.Thread.run (Thread.java:748)
+
+12:17:18.402 INFO Close browser
+12:17:18.469 INFO Test Result: CODE ERROR

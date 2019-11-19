@@ -1,0 +1,42 @@
+{
+    "tests": [
+        {
+            "test_set": "set_ee6fa9",
+            "module": "",
+            "sub_modules": [],
+            "name": "first_test",
+            "full_name": "first_test",
+            "result": "success",
+            "test_elapsed_time": 24.6,
+            "start_date_time": "2019/10/30 11:19",
+            "browser": "chrome (remote)",
+            "data": {
+                "env": "{'url': 'http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=', 'login': 'User1', 'password': 'Automation_1_3', 'getItemsLink': 'https://crs.qa.kofile.com/69999/api/Order/GetQueuesItemCounts', 'cookieName': 'ASP.NET_SessionId', 'name': 'test_env'}"
+            },
+            "environment": "test_env",
+            "set_name": ""
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome-remote",
+                "full_name": null,
+                "remote": false,
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "test_env"
+        ],
+        "tags": [],
+        "remote_url": "http://localhost:4446/wd/hub"
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "success": 1
+    },
+    "net_elapsed_time": 24.6,
+    "has_finished": false
+}

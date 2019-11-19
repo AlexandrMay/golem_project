@@ -1,0 +1,14 @@
+14:17:17.846 INFO Test execution started: plats
+14:17:17.846 INFO Browser: chrome
+14:17:17.847 INFO Environment: test_env
+14:17:17.847 INFO Using data:
+    url: http://{}:{}@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer=
+14:17:21.038 INFO Navigate to: 'http://User1:Automation_1_3@10.0.1.73:8001/69999/?ReturnUrl=https://crs.qa.kofile.com/69999/Account/ReturnClaim&amp;Referrer='
+14:17:34.572 INFO Waiting for 3 seconds
+14:17:39.711 INFO Click //td/a[@class='iconredirectorder ']
+14:17:46.577 INFO Click editOrderSummaryButton
+14:17:50.780 INFO Waiting for 3 seconds
+14:17:53.782 INFO Execute javascript code 'window.scrollTo(0, 1000)' with args '()'
+14:17:53.850 INFO Click editOITFundsButton
+14:17:55.582 INFO Test end
+14:17:58.133 INFO Test Result: SUCCESS
