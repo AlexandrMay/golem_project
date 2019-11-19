@@ -1,7 +1,6 @@
 from golem import actions as a
 from projects.some_project.rest_helper import api_service
 import requests
-import jsonpath
 
 description = 'Test is checking the values from ui tabs and response of "GetQueuesItemCounts" query'
 
